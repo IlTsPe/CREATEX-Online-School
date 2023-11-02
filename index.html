@@ -1,1162 +1,1336 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="apple-touch-icon" sizes="57x57" href="img/icons/favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="img/icons/favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="img/icons/favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="img/icons/favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="img/icons/favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="img/icons/favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="img/icons/favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon/favicon-16x16.png">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-	<link rel="stylesheet" href="css/style.min.css">
-	<title>CREATEX</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="apple-touch-icon" sizes="57x57"
+			href="img/icons/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60"
+			href="img/icons/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72"
+			href="img/icons/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76"
+			href="img/icons/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114"
+			href="img/icons/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120"
+			href="img/icons/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144"
+			href="img/icons/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152"
+			href="img/icons/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180"
+			href="img/icons/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"
+			href="img/icons/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32"
+			href="img/icons/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96"
+			href="img/icons/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16"
+			href="img/icons/favicon/favicon-16x16.png">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+		<link rel="stylesheet" href="css/style.min.css">
+		<title>CREATEX</title>
+	</head>
 
-<body>
-	<div class="wrapper">
-		<header class="header">
-	<div class="header__overlay"></div>
-	<div class="container header__container">
-		<div class="header__left">
-			<a class="logo"><img src="img/logo/logo.svg" alt="Логотип компании"></a>
-			<nav class="header__nav">
-				<ul class="header__list">
-					<li class="header__item">
-						<a href="#about" class="header__link">About Us</a>
-					</li>
-					<li class="header__item">
-						<a href="#teach" class="header__link">Courses</a>
-					</li>
-					<li class="header__item">
-						<a href="#course" class="header__link">Events</a>
-					</li>
-					<li class="header__item">
-						<a href="#blog" class="header__link">Blog</a>
-					</li>
-					<li class="header__item">
-						<a href="#info" class="header__link">Contacts</a>
-					</li>
-				</ul>
-				<button class="close">
-					<span class="close-line"></span>
-					<span class="close-line"></span>
-				</button>
-			</nav>
-		</div>
-		<div class="header__right">
-			<button class="header__btn btn">Get consultation</button>
-			<button class="header__login">
-				<svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" fill="#424551">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M9.00019 1.70866C7.38936 1.70866 6.08353 3.0145 6.08353 4.62533C6.08353 6.23616 7.38936 7.54199 9.00019 7.54199C10.611 7.54199 11.9169 6.23616 11.9169 4.62533C11.9169 3.0145 10.611 1.70866 9.00019 1.70866ZM4.41686 4.62533C4.41686 2.09402 6.46889 0.0419922 9.00019 0.0419922C11.5315 0.0419922 13.5835 2.09402 13.5835 4.62533C13.5835 7.15663 11.5315 9.20866 9.00019 9.20866C6.46889 9.20866 4.41686 7.15663 4.41686 4.62533Z" />
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M4.08691 11.7087C3.50914 11.7087 3.05755 11.99 2.87424 12.3942C2.62053 12.9536 2.39078 13.6196 2.33656 14.2513C2.31233 14.5337 2.43006 14.7418 2.5923 14.8426C3.44993 15.3753 5.43719 16.292 9.00019 16.292C12.5632 16.292 14.5505 15.3753 15.4081 14.8426C15.5703 14.7418 15.6881 14.5337 15.6638 14.2513C15.6096 13.6196 15.3799 12.9536 15.1261 12.3942C14.9428 11.99 14.4912 11.7087 13.9135 11.7087H4.08691ZM1.35639 11.7058C1.86301 10.5887 2.99428 10.042 4.08691 10.042H13.9135C15.0061 10.042 16.1374 10.5887 16.644 11.7058C16.935 12.3474 17.2472 13.2099 17.3244 14.1088C17.3946 14.9273 17.0544 15.7819 16.2876 16.2583C15.1596 16.959 12.8665 17.9587 9.00019 17.9587C5.13386 17.9587 2.84078 16.959 1.71283 16.2583C0.945947 15.7819 0.605747 14.9273 0.676001 14.1088C0.753149 13.2099 1.0654 12.3474 1.35639 11.7058Z"/>
-					</svg>
-					<span>Log in&nbsp;/ Register</span>
-			</button>
-		</div>
-		<button class="burger">
-			<span></span><span></span><span></span>
-		</button>
-	</div>
-</header>
-		<main class="main">
-			<section class="hero" id="hero">
-	<div class="container">
-		<div class="hero__wrapper">
-			<div class="hero__left">
-				<div class="hero__showreel">
-					<a href="https://www.youtube.com/watch?v=1ekZEVeXwek&list=RDxnyxbg_bgOM&index=4&ab_channel=ArianaGrandeVevo"
-						data-fancybox class="hero__play">
-						<svg width="52" height="52" viewBox="0 0 52 52">
-							<circle class="circle" cx="26" cy="26" r="26" />
-							<path
-								d="M32.5 25.134C33.1667 25.5189 33.1667 26.4811 32.5 26.866L23.5 32.0622C22.8333 32.4471 22 31.966 22 31.1962L22 20.8038C22 20.034 22.8333 19.5529 23.5 19.9378L32.5 25.134Z"
-								fill="white" />
-						</svg>
-					</a>
-					<span>Play showreel</span>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__overlay"></div>
+				<div class="container header__container">
+					<div class="header__left">
+						<a class="logo"><img src="img/logo/logo.svg" alt="Логотип компании"></a>
+						<nav class="header__nav">
+							<ul class="header__list">
+								<li class="header__item">
+									<a href="#about" class="header__link">About Us</a>
+								</li>
+								<li class="header__item">
+									<a href="#teach" class="header__link">Courses</a>
+								</li>
+								<li class="header__item">
+									<a href="#course" class="header__link">Events</a>
+								</li>
+								<li class="header__item">
+									<a href="#blog" class="header__link">Blog</a>
+								</li>
+								<li class="header__item">
+									<a href="#info" class="header__link">Contacts</a>
+								</li>
+							</ul>
+							<button class="close">
+								<span class="close-line"></span>
+								<span class="close-line"></span>
+							</button>
+						</nav>
+					</div>
+					<div class="header__right">
+						<button class="header__btn btn">Get consultation</button>
+						<button class="header__login">
+							<svg width="18" height="18" viewBox="0 0 18 18"
+								xmlns="http://www.w3.org/2000/svg" fill="#424551">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M9.00019 1.70866C7.38936 1.70866 6.08353 3.0145 6.08353 4.62533C6.08353 6.23616 7.38936 7.54199 9.00019 7.54199C10.611 7.54199 11.9169 6.23616 11.9169 4.62533C11.9169 3.0145 10.611 1.70866 9.00019 1.70866ZM4.41686 4.62533C4.41686 2.09402 6.46889 0.0419922 9.00019 0.0419922C11.5315 0.0419922 13.5835 2.09402 13.5835 4.62533C13.5835 7.15663 11.5315 9.20866 9.00019 9.20866C6.46889 9.20866 4.41686 7.15663 4.41686 4.62533Z" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M4.08691 11.7087C3.50914 11.7087 3.05755 11.99 2.87424 12.3942C2.62053 12.9536 2.39078 13.6196 2.33656 14.2513C2.31233 14.5337 2.43006 14.7418 2.5923 14.8426C3.44993 15.3753 5.43719 16.292 9.00019 16.292C12.5632 16.292 14.5505 15.3753 15.4081 14.8426C15.5703 14.7418 15.6881 14.5337 15.6638 14.2513C15.6096 13.6196 15.3799 12.9536 15.1261 12.3942C14.9428 11.99 14.4912 11.7087 13.9135 11.7087H4.08691ZM1.35639 11.7058C1.86301 10.5887 2.99428 10.042 4.08691 10.042H13.9135C15.0061 10.042 16.1374 10.5887 16.644 11.7058C16.935 12.3474 17.2472 13.2099 17.3244 14.1088C17.3946 14.9273 17.0544 15.7819 16.2876 16.2583C15.1596 16.959 12.8665 17.9587 9.00019 17.9587C5.13386 17.9587 2.84078 16.959 1.71283 16.2583C0.945947 15.7819 0.605747 14.9273 0.676001 14.1088C0.753149 13.2099 1.0654 12.3474 1.35639 11.7058Z" />
+							</svg>
+							<span>Log in&nbsp;/ Register</span>
+						</button>
+					</div>
+					<button class="burger">
+						<span></span><span></span><span></span>
+					</button>
 				</div>
-				<h1 class="hero__title">Enjoy studying with Createx Online Courses</h1>
-				<div class="hero__btns">
-					<a href="#about" class="hero__btn btn--stroke">About Us</a>
-					<a href="#teach" class="hero__btn btn">Explore courses</a>
+			</header>
+			<main class="main">
+				<section class="hero" id="hero">
+					<div class="container">
+						<div class="hero__wrapper">
+							<div class="hero__left">
+								<div class="hero__showreel">
+									<a
+										href="https://www.youtube.com/watch?v=1ekZEVeXwek&list=RDxnyxbg_bgOM&index=4&ab_channel=ArianaGrandeVevo"
+										data-fancybox class="hero__play">
+										<svg width="52" height="52" viewBox="0 0 52 52">
+											<circle class="circle" cx="26" cy="26" r="26" />
+											<path
+												d="M32.5 25.134C33.1667 25.5189 33.1667 26.4811 32.5 26.866L23.5 32.0622C22.8333 32.4471 22 31.966 22 31.1962L22 20.8038C22 20.034 22.8333 19.5529 23.5 19.9378L32.5 25.134Z"
+												fill="white" />
+										</svg>
+									</a>
+									<span>Play showreel</span>
+								</div>
+								<h1 class="hero__title">Enjoy studying with Createx Online Courses</h1>
+								<div class="hero__btns">
+									<a href="#about" class="hero__btn btn--stroke">About Us</a>
+									<a href="#teach" class="hero__btn btn">Explore courses</a>
+								</div>
+							</div>
+							<div class="hero__img"><img src="img/hero/illustration.png"
+									alt="Carton illustration"></div>
+						</div>
+						<div class="hero__info info-block">
+							<ul class="info-block__list hero__list">
+								<li class="info-block__item hero__item"><span>1200</span>Students
+									graduated</li>
+								<li class="info-block__item hero__item"><span>84</span>Completed courses</li>
+								<li class="info-block__item hero__item"><span>16</span>Qualified tutors</li>
+								<li class="info-block__item hero__item"><span>5</span>Years of
+									experience</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<div class="modal none">
+					<div class="modal__container">
+						<h3 class="modal__title">Log In</h3>
+						<p class="modal__subtitle">New user? Create an <a href="#!"
+								class="modal__link">account</a></p>
+						<form class="modal__inputs">
+							<div class="modal__email">
+								<input type="email" required minlength="4" placeholder="Email">
+							</div>
+							<div class="modal__password">
+								<input type="password" required placeholder="Password">
+							</div>
+							<button class="modal__btn btn" type="submit">Log In</button>
+						</form>
+						<p class="modal__forgot">Forgot your password? <a href="#!"
+								class="modal__link">Get it back!</a></p>
+						<button class="close close__modal">
+							<span></span>
+							<span></span>
+						</button>
+					</div>
 				</div>
-			</div>
-			<div class="hero__img"><img src="img/hero/illustration.png" alt="Carton illustration"></div>
-		</div>
-		<div class="hero__info info-block">
-			<ul class="info-block__list hero__list">
-				<li class="info-block__item hero__item"><span>1200</span>Students graduated</li>
-				<li class="info-block__item hero__item"><span>84</span>Completed courses</li>
-				<li class="info-block__item hero__item"><span>16</span>Qualified tutors</li>
-				<li class="info-block__item hero__item"><span>5</span>Years of experience</li>
-			</ul>
-		</div>
-	</div>
-</section>
-<div class="modal none" >
-	<div class="modal__container">
-		<h3 class="modal__title">Log In</h3>
-		<p class="modal__subtitle">New user? Create an <a href="#!" class="modal__link">account</a></p>
-		<form class="modal__inputs">
-			<div class="modal__email">
-				<input type="email" required minlength="4" placeholder="Email">
-			</div>
-			<div class="modal__password">
-				<input type="password" required placeholder="Password">
-			</div>
-			<button class="modal__btn btn" type="submit">Log In</button>
-		</form>
-		<p class="modal__forgot">Forgot your password? <a href="#!" class="modal__link">Get it back!</a></p>
-		<button class="close close__modal">
-			<span></span>
-			<span></span>
-		</button>
-	</div>
-</div>
-			<div class="bg-about">
-				<section class="about" id="about">
-	<div class="container about__container">
-		<div class="about__top">
-			<div class="about__content">
-				<h2 class="subtitle about__subtitle">About us</h2>
-				<h3 class="title about__title">Createx Online School</h3>
-				<p class="descr-bold about__descr-bold">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts.</p>
-				<p class="text about__text">We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational programs help you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we organise.</p>
-				<div class="about__btns">
-					<a href="#course" class="about__btn btn--stroke">Explore events</a>
-					<a href="#teach" class="about__btn btn">Browse courses</a>
-				</div>
-			</div>
-			<img src="img/about/illustration.png" alt="A man at a computer, illustration
+				<div class="bg-about">
+					<section class="about" id="about">
+						<div class="container about__container">
+							<div class="about__top">
+								<div class="about__content">
+									<h2 class="subtitle about__subtitle">About us</h2>
+									<h3 class="title about__title">Createx Online School</h3>
+									<p class="descr-bold about__descr-bold">Createx Online School is a
+										leader in online studying. We have lots of courses and programs from
+										the main market experts.</p>
+									<p class="text about__text">We provide relevant approaches to online
+										learning, internships and employment in the largest companies in the
+										country. Our educational programs help you get a new specialty from
+										scratch. During your studies, we will help you find a job. Check the
+										courses and online events that we organise.</p>
+									<div class="about__btns">
+										<a href="#course" class="about__btn btn--stroke">Explore events</a>
+										<a href="#teach" class="about__btn btn">Browse courses</a>
+									</div>
+								</div>
+								<img src="img/about/illustration.png"
+									alt="A man at a computer, illustration
 			" class="about__img">
-		</div>
-		<div class="about__bottom">
-			<img src="img/about/image.jpg" alt="A man at a computer">
-			<div class="about__info info-block">
-				<ul class="info-block__list about__list">
-					<li class="info-block__item about__item"><span>1200</span>Students graduated</li>
-					<li class="info-block__item about__item"><span>84</span>Completed courses</li>
-					<li class="info-block__item about__item"><span>16</span>Qualified tutors</li>
-					<li class="info-block__item about__item"><span>5</span>Years of experience</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</section>
-				<section class="teach" id="teach">
-	<div class="container">
-		<div class="teach__header header-center">
-			<h2 class="teach__subtitle subtitle">our main directions</h2>
-			<h3 class="teach__title title">What do we teach</h3>
-		</div>
-		<ul class="teach__tabs">
-			<li class="teach__tab teach__tab--active"><button>All</button></li>
-			<li class="teach__tab"><button>Marketing</button></li>
-			<li class="teach__tab"><button>Management</button></li>
-			<li class="teach__tab"><button>HR & Recruting</button></li>
-			<li class="teach__tab"><button>Design</button></li>
-			<li class="teach__tab"><button>Development</button></li>
-		</ul>
-		<ul class="teach__cards cards cards__active">
-			<li class="cards__item">
-				<img src="img/teach/card1.jpg" alt="Paper clips on a pink background">
-				<div class="cards__item-wrapper">
-					<h6 class="cards__title cards__title--mar">Marketing</h6>
-					<p class="cards__descr text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
-						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
-					<div class="cards__link">
-						<a href="#!" class=" link-open">
-							Check courses
-						</a>
-					</div>
-				</div>
-			</li>
-			<li class="cards__item">
-				<img src="img/teach/card2.jpg" alt="Puzzle on a blue background">
-				<div class="cards__item-wrapper">
-					<h6 class="cards__title cards__title--man">Management</h6>
-					<p class="cards__descr text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
-						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
-					<div class="cards__link">
-						<a href="#!" class=" link-open">
-							Check courses
-						</a>
-					</div>
-				</div>
-			</li>
-			<li class="cards__item">
-				<img src="img/teach/card3.jpg" alt="Cubes with a human icon">
-				<div class="cards__item-wrapper">
-					<h6 class="cards__title cards__title--hr">HR & Recruting</h6>
-					<p class="cards__descr text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
-						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
-					<div class="cards__link">
-						<a href="#!" class=" link-open">
-							Check courses
-						</a>
-					</div>
-				</div>
-			</li>
-			<li class="cards__item">
-				<img src="img/teach/card4.jpg" alt="Mockups of design with laptop and magazine
+							</div>
+							<div class="about__bottom">
+								<img src="img/about/image.jpg" alt="A man at a computer">
+								<div class="about__info info-block">
+									<ul class="info-block__list about__list">
+										<li class="info-block__item about__item"><span>1200</span>Students
+											graduated</li>
+										<li class="info-block__item about__item"><span>84</span>Completed
+											courses</li>
+										<li class="info-block__item about__item"><span>16</span>Qualified
+											tutors</li>
+										<li class="info-block__item about__item"><span>5</span>Years of
+											experience</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="teach" id="teach">
+						<div class="container">
+							<div class="teach__header header-center">
+								<h2 class="teach__subtitle subtitle">our main directions</h2>
+								<h3 class="teach__title title">What do we teach</h3>
+							</div>
+							<ul class="teach__tabs">
+								<li class="teach__tab teach__tab--active"><button>All</button></li>
+								<li class="teach__tab"><button>Marketing</button></li>
+								<li class="teach__tab"><button>Management</button></li>
+								<li class="teach__tab"><button>HR & Recruting</button></li>
+								<li class="teach__tab"><button>Design</button></li>
+								<li class="teach__tab"><button>Development</button></li>
+							</ul>
+							<ul class="teach__cards cards cards__active">
+								<li class="cards__item">
+									<img src="img/teach/card1.jpg" alt="Paper clips on a pink background">
+									<div class="cards__item-wrapper">
+										<h6 class="cards__title cards__title--mar">Marketing</h6>
+										<p class="cards__descr text">Odio posuere netus quisque faucibus
+											lectus arcu donec. Eget dictum
+											eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+										<div class="cards__link">
+											<a href="#!" class=" link-open">
+												Check courses
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="cards__item">
+									<img src="img/teach/card2.jpg" alt="Puzzle on a blue background">
+									<div class="cards__item-wrapper">
+										<h6 class="cards__title cards__title--man">Management</h6>
+										<p class="cards__descr text">Odio posuere netus quisque faucibus
+											lectus arcu donec. Eget dictum
+											eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+										<div class="cards__link">
+											<a href="#!" class=" link-open">
+												Check courses
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="cards__item">
+									<img src="img/teach/card3.jpg" alt="Cubes with a human icon">
+									<div class="cards__item-wrapper">
+										<h6 class="cards__title cards__title--hr">HR & Recruting</h6>
+										<p class="cards__descr text">Odio posuere netus quisque faucibus
+											lectus arcu donec. Eget dictum
+											eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+										<div class="cards__link">
+											<a href="#!" class=" link-open">
+												Check courses
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="cards__item">
+									<img src="img/teach/card4.jpg"
+										alt="Mockups of design with laptop and magazine
 ">
-				<div class="cards__item-wrapper">
-					<h6 class="cards__title cards__title--des">Design</h6>
-					<p class="cards__descr text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
-						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
-					<div class="cards__link">
-						<a href="#!" class=" link-open">
-							Check courses
-						</a>
-					</div>
-				</div>
-			</li>
-			<li class="cards__item">
-				<img src="img/teach/card5.jpg" alt="A snippet of javascript code">
-				<div class="cards__item-wrapper">
-					<h6 class="cards__title cards__title--dev">Development</h6>
-					<p class="cards__descr text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
-						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
-					<div class="cards__link">
-						<a href="#!" class=" link-open">
-							Check courses
-						</a>
-					</div>
-				</div>
-			</li>
-			<li class="cards__item cards__item-coming">
-				<p class="cards__coming">New studying program coming soon...</p>
-			</li>
-		</ul>
-		<ul class="teach__cards cards">
-			<li class="cards__item">
-				<img src="img/teach/card1.jpg" alt="Paper clips on a pink background">
-				<div class="cards__item-wrapper">
-					<h6 class="cards__title cards__title--mar">Marketing</h6>
-					<p class="cards__descr text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
-						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
-					<div class="cards__link">
-						<a href="#!" class=" link-open">
-							Check courses
-						</a>
-					</div>
-				</div>
-			</li>
-		</ul>
-		<ul class="teach__cards cards ">
-			<li class="cards__item">
-				<img src="img/teach/card2.jpg" alt="Puzzle on a blue background">
-				<div class="cards__item-wrapper">
-					<h6 class="cards__title cards__title--man">Management</h6>
-					<p class="cards__descr text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
-						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
-					<div class="cards__link">
-						<a href="#!" class=" link-open">
-							Check courses
-						</a>
-					</div>
-				</div>
-			</li>
-		</ul>
-		<ul class="teach__cards cards">
-			<li class="cards__item">
-				<img src="img/teach/card3.jpg" alt="Cubes with a human icon">
-				<div class="cards__item-wrapper">
-					<h6 class="cards__title cards__title--hr">HR & Recruting</h6>
-					<p class="cards__descr text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
-						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
-					<div class="cards__link">
-						<a href="#!" class=" link-open">
-							Check courses
-						</a>
-					</div>
-				</div>
-			</li>
-		</ul>
-		<ul class="teach__cards cards">
-			<li class="cards__item">
-				<img src="img/teach/card4.jpg" alt="Mockups of design with laptop and magazine
+									<div class="cards__item-wrapper">
+										<h6 class="cards__title cards__title--des">Design</h6>
+										<p class="cards__descr text">Odio posuere netus quisque faucibus
+											lectus arcu donec. Eget dictum
+											eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+										<div class="cards__link">
+											<a href="#!" class=" link-open">
+												Check courses
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="cards__item">
+									<img src="img/teach/card5.jpg" alt="A snippet of javascript code">
+									<div class="cards__item-wrapper">
+										<h6 class="cards__title cards__title--dev">Development</h6>
+										<p class="cards__descr text">Odio posuere netus quisque faucibus
+											lectus arcu donec. Eget dictum
+											eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+										<div class="cards__link">
+											<a href="#!" class=" link-open">
+												Check courses
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="cards__item cards__item-coming">
+									<p class="cards__coming">New studying program coming soon...</p>
+								</li>
+							</ul>
+							<ul class="teach__cards cards">
+								<li class="cards__item">
+									<img src="img/teach/card1.jpg" alt="Paper clips on a pink background">
+									<div class="cards__item-wrapper">
+										<h6 class="cards__title cards__title--mar">Marketing</h6>
+										<p class="cards__descr text">Odio posuere netus quisque faucibus
+											lectus arcu donec. Eget dictum
+											eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+										<div class="cards__link">
+											<a href="#!" class=" link-open">
+												Check courses
+											</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="teach__cards cards ">
+								<li class="cards__item">
+									<img src="img/teach/card2.jpg" alt="Puzzle on a blue background">
+									<div class="cards__item-wrapper">
+										<h6 class="cards__title cards__title--man">Management</h6>
+										<p class="cards__descr text">Odio posuere netus quisque faucibus
+											lectus arcu donec. Eget dictum
+											eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+										<div class="cards__link">
+											<a href="#!" class=" link-open">
+												Check courses
+											</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="teach__cards cards">
+								<li class="cards__item">
+									<img src="img/teach/card3.jpg" alt="Cubes with a human icon">
+									<div class="cards__item-wrapper">
+										<h6 class="cards__title cards__title--hr">HR & Recruting</h6>
+										<p class="cards__descr text">Odio posuere netus quisque faucibus
+											lectus arcu donec. Eget dictum
+											eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+										<div class="cards__link">
+											<a href="#!" class=" link-open">
+												Check courses
+											</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="teach__cards cards">
+								<li class="cards__item">
+									<img src="img/teach/card4.jpg"
+										alt="Mockups of design with laptop and magazine
 ">
-				<div class="cards__item-wrapper">
-					<h6 class="cards__title cards__title--des">Design</h6>
-					<p class="cards__descr text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
-						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
-					<div class="cards__link">
-						<a href="#!" class=" link-open">
-							Check courses
-						</a>
-					</div>
-				</div>
-			</li>
-		</ul>
-		<ul class="teach__cards cards">
-			<li class="cards__item">
-				<img src="img/teach/card5.jpg" alt="A snippet of javascript code">
-				<div class="cards__item-wrapper">
-					<h6 class="cards__title cards__title--dev">Development</h6>
-					<p class="cards__descr text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
-						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
-					<div class="cards__link">
-						<a href="#!" class="link-open">
-							Check courses
-						</a>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-</section>
-				<section class="certificate" id="certificate">
-	<div class="container certificate__container">
-		<div class="certificate__content">
-			<h2 class="subtitle certificate__subtitle">Createx Certificate</h2>
-			<h3 class="title certificate__title">Your expertise will be confirmed</h3>
-			<p class="text certificate__partners">We&nbsp;are accredited by&nbsp;international professional organizations and institutes:</p>
-			<ul class="certificate__list organizations">
-				<li class="organizations__item"><img src="img/certificate/org1.png" alt="Del Mar Strategy"></li>
-				<li class="organizations__item"><img src="img/certificate/org2.png" alt="Sentinal Consulting"></li>
-				<li class="organizations__item"><img src="img/certificate/org3.png" alt="National"></li>
-			</ul>
-			<img src="img/certificate/certificate.jpg" alt="Our company's certificate" class="certificate__img">
-		</div>
-	</div>
-</section>
-			</div>
-			<div class="bg">
-				<section class="team">
-	<div class="container">
-		<h2 class="team__subtitle subtitle">Best tutors are all here</h2>
-		<h3 class="team__title title">Meet our team</h3>
-		<div class="team__slider swiper">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<div class="team__card ">
-						<div class="team__slide">
-							<div class="team__photo">
-								<img src="img/team/Dianne.png" class="team__photo-yellow" alt="Dianne Russell's photo">
-								<ul class="team__social">
-									<li class="team__item team__item--facebook">
-										<a href="https://facebook.com/" class="team__link" target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z" />
-											</svg>
-										</a>
-									</li>
-									<li class="team__item team__item--inst">
-										<a href="https://instagram.com/" class="team__link" target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z" />
-												<path
-													d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z" />
-												<path
-													d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z" />
-											</svg>
-										</a>
-									</li>
-									<li class="team__item team__item--linked">
-										<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/" class="team__link"
-											target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z" />
-												<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z" />
-												<path
-													d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z" />
-											</svg>
-										</a>
-									</li>
+									<div class="cards__item-wrapper">
+										<h6 class="cards__title cards__title--des">Design</h6>
+										<p class="cards__descr text">Odio posuere netus quisque faucibus
+											lectus arcu donec. Eget dictum
+											eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+										<div class="cards__link">
+											<a href="#!" class=" link-open">
+												Check courses
+											</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="teach__cards cards">
+								<li class="cards__item">
+									<img src="img/teach/card5.jpg" alt="A snippet of javascript code">
+									<div class="cards__item-wrapper">
+										<h6 class="cards__title cards__title--dev">Development</h6>
+										<p class="cards__descr text">Odio posuere netus quisque faucibus
+											lectus arcu donec. Eget dictum
+											eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+										<div class="cards__link">
+											<a href="#!" class="link-open">
+												Check courses
+											</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="certificate" id="certificate">
+						<div class="container certificate__container">
+							<div class="certificate__content">
+								<h2 class="subtitle certificate__subtitle">Createx Certificate</h2>
+								<h3 class="title certificate__title">Your expertise will be confirmed</h3>
+								<p class="text certificate__partners">We&nbsp;are accredited
+									by&nbsp;international professional organizations and institutes:</p>
+								<ul class="certificate__list organizations">
+									<li class="organizations__item"><img src="img/certificate/org1.png"
+											alt="Del Mar Strategy"></li>
+									<li class="organizations__item"><img src="img/certificate/org2.png"
+											alt="Sentinal Consulting"></li>
+									<li class="organizations__item"><img src="img/certificate/org3.png"
+											alt="National"></li>
 								</ul>
-							</div>
-							<div class="team__text">
-								<h6 class="team__name descr-bold">Dianne Russell</h6>
-								<p class="team__proff text">Founder and CEO</p>
+								<img src="img/certificate/certificate.jpg"
+									alt="Our company's certificate" class="certificate__img">
 							</div>
 						</div>
-					</div>
+					</section>
 				</div>
-				<div class=" swiper-slide">
-					<div class="team__card ">
-						<div class=" team-slide">
-							<div class="team__photo">
-								<img src="img/team/Jerome.png" class="team__photo-yellow" alt="Jerome Bell's photo">
-								<ul class="team__social">
-									<li class="team__item team__item--facebook">
-										<a href="https://facebook.com/" class="team__link" target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z" />
-											</svg>
-										</a>
-									</li>
-									<li class="team__item team__item--inst">
-										<a href="https://instagram.com/" class="team__link" target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z" />
-												<path
-													d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z" />
-												<path
-													d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z" />
-											</svg>
-										</a>
-									</li>
-									<li class="team__item team__item--linked">
-										<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/" class="team__link"
-											target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z" />
-												<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z" />
-												<path
-													d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z" />
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="team__text">
-								<h6 class="team__name descr-bold">Dianne Russell</h6>
-								<p class="team__proff text">Founder and CEO</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class=" swiper-slide">
-					<div class="team__card ">
-						<div class=" team-slide">
-							<div class="team__photo">
-								<img src="img/team/Kristin.png" class="team__photo-yellow"
-									alt="Kristin Watson's photo">
-								<ul class="team__social">
-									<li class="team__item team__item--facebook">
-										<a href="https://facebook.com/" class="team__link" target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z" />
-											</svg>
-										</a>
-									</li>
-									<li class="team__item team__item--inst">
-										<a href="https://instagram.com/" class="team__link" target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z" />
-												<path
-													d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z" />
-												<path
-													d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z" />
-											</svg>
-										</a>
-									</li>
-									<li class="team__item team__item--linked">
-										<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/" class="team__link"
-											target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z" />
-												<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z" />
-												<path
-													d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z" />
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="team__text">
-								<h6 class="team__name descr-bold">Dianne Russell</h6>
-								<p class="team__proff text">Founder and CEO</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class=" swiper-slide">
-					<div class="team__card ">
-						<div class=" team-slide">
-							<div class="team__photo">
-								<img src="img/team/Marvin.png" class="team__photo-yellow"
-									alt="Marvin McKinney's photo">
-								<ul class="team__social">
-									<li class="team__item team__item--facebook">
-										<a href="https://facebook.com/" class="team__link" target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z" />
-											</svg>
-										</a>
-									</li>
-									<li class="team__inst">
-										<a href="https://instagram.com/" class="team__item team__item--link" target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z" />
-												<path
-													d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z" />
-												<path
-													d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z" />
-											</svg>
-										</a>
-									</li>
-									<li class="team__item team__item--linked">
-										<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/" class="team__link"
-											target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z" />
-												<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z" />
-												<path
-													d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z" />
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="team__text">
-								<h6 class="team__name descr-bold">Dianne Russell</h6>
-								<p class="team__proff text">Founder and CEO</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class=" swiper-slide">
-					<div class="team__card">
-						<div class=" team-slide">
-							<div class="team__photo">
-								<img src="img/team/Dianne.png" class="team__photo-yellow" alt="Dianne Russell's photo">
-								<ul class="team__social">
-									<li class="team__facebook">
-										<a href="https://facebook.com/" class="team__link" target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z" />
-											</svg>
-										</a>
-									</li>
-									<li class="team__inst">
-										<a href="https://instagram.com/" class="team__link" target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z" />
-												<path
-													d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z" />
-												<path
-													d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z" />
-											</svg>
-										</a>
-									</li>
-									<li class="team__linked">
-										<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/" class="team__link"
-											target="_blank">
-											<svg width="20" height="20" viewBox="0 0 20 20"
-												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
-												<path
-													d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z" />
-												<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z" />
-												<path
-													d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z" />
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="team__text">
-								<h6 class="team__name descr-bold">Dianne Russell</h6>
-								<p class="team__proff text">Founder and CEO</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="slider-buttons">
-				<div class="swiper-btn team-swiper-prev swiper-button-prev">
-					<svg width="18" height="12" viewBox="0 0 18 12" fill="#424551" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd"
-							d="M6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071L0.292892 6.70711C-0.0976315 6.31658 -0.0976315 5.68342 0.292892 5.29289L4.79289 0.792893C5.18342 0.402369 5.81658 0.402369 6.20711 0.792893C6.59763 1.18342 6.59763 1.81658 6.20711 2.20711L3.41421 5L17 5C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7L3.41421 7L6.20711 9.79289C6.59763 10.1834 6.59763 10.8166 6.20711 11.2071Z" />
-					</svg>
-				</div>
-				<div class="swiper-btn team-swiper-next swiper-button-next">
-					<svg width="18" height="12" viewBox="0 0 18 12" fill="#424551" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd"
-							d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z" />
-					</svg>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-				<section class="testimonials">
-	<div class="container testimonials__container">
-		<div class="testimonials__header header-center">
-			<h2 class="subtitle testimonials__subtitle">Testimonials</h2>
-			<h3 class="title testimonials__title">What our students say</h3>
-		</div>
-		<div class="testimonials__slider slider-testimonials swiper">
-			<div class="swiper-wrapper">
-				<div class="testimonials__slide swiper-slide">
-					<div class="testimonials__card-wrapper">
-						<div class="testimonials__comment">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet
-							lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu&nbsp;sed
-							purus facilisi. Vitae id&nbsp;turpis tempus ornare turpis quis non.
-							Congue tortor in&nbsp;euismod vulputate etiam eros. Pulvinar neque
-							pharetra arcu diam maecenas diam integer&nbsp;in.
-						</div>
-						<div class="testimonials__author">
-							<img src="img/testimonials/Eleanora.jpg" alt="Портрет комментатора"
-								class="testimonials__img">
-							<div class="testimonials__author-info">
-								<p class="testimonials__name">Eleanor Pena</p>
-								<p class="testimonials__position">Position, Course</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="testimonials__slide swiper-slide">
-					<div class="testimonials__card-wrapper">
-						<div class="testimonials__comment">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet
-							lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu&nbsp;sed
-							purus facilisi. Vitae id&nbsp;turpis tempus ornare turpis quis non.
-							Congue tortor in&nbsp;euismod vulputate etiam eros. Pulvinar neque
-							pharetra arcu diam maecenas diam integer&nbsp;in.
-						</div>
-						<div class="testimonials__author">
-							<img src="img/testimonials/Eleanora.jpg" alt="Портрет комментатора"
-								class="testimonials__img">
-							<div class="testimonials__author-info">
-								<p class="testimonials__name">Eleanor Pena</p>
-								<p class="testimonials__position">Position, Course</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="testimonials__slide swiper-slide">
-					<div class="testimonials__card-wrapper">
-						<div class="testimonials__comment">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet
-							lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu&nbsp;sed
-							purus facilisi. Vitae id&nbsp;turpis tempus ornare turpis quis non.
-							Congue tortor in&nbsp;euismod vulputate etiam eros. Pulvinar neque
-							pharetra arcu diam maecenas diam integer&nbsp;in.
-						</div>
-						<div class="testimonials__author">
-							<img src="img/testimonials/Eleanora.jpg" alt="Портрет комментатора"
-								class="testimonials__img">
-							<div class="testimonials__author-info">
-								<p class="testimonials__name">Eleanor Pena</p>
-								<p class="testimonials__position">Position, Course</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="testimonials__slide swiper-slide">
-					<div class="testimonials__card-wrapper">
-						<div class="testimonials__comment">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet
-							lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu&nbsp;sed
-							purus facilisi. Vitae id&nbsp;turpis tempus ornare turpis quis non.
-							Congue tortor in&nbsp;euismod vulputate etiam eros. Pulvinar neque
-							pharetra arcu diam maecenas diam integer&nbsp;in.
-						</div>
-						<div class="testimonials__author">
-							<img src="img/testimonials/Eleanora.jpg" alt="Портрет комментатора"
-								class="testimonials__img">
-							<div class="testimonials__author-info">
-								<p class="testimonials__name">Eleanor Pena</p>
-								<p class="testimonials__position">Position, Course</p>
+				<div class="bg">
+					<section class="team">
+						<div class="container">
+							<h2 class="team__subtitle subtitle">Best tutors are all here</h2>
+							<h3 class="team__title title">Meet our team</h3>
+							<div class="team__slider swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="team__card ">
+											<div class="team__slide">
+												<div class="team__photo">
+													<img src="img/team/Dianne.png" class="team__photo-yellow"
+														alt="Dianne Russell's photo">
+													<ul class="team__social">
+														<li class="team__item team__item--facebook">
+															<a href="https://facebook.com/" class="team__link"
+																target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z" />
+																</svg>
+															</a>
+														</li>
+														<li class="team__item team__item--inst">
+															<a href="https://instagram.com/" class="team__link"
+																target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z" />
+																	<path
+																		d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z" />
+																	<path
+																		d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z" />
+																</svg>
+															</a>
+														</li>
+														<li class="team__item team__item--linked">
+															<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/"
+																class="team__link"
+																target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z" />
+																	<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z" />
+																	<path
+																		d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z" />
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<div class="team__text">
+													<h6 class="team__name descr-bold">Dianne Russell</h6>
+													<p class="team__proff text">Founder and CEO</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class=" swiper-slide">
+										<div class="team__card ">
+											<div class=" team-slide">
+												<div class="team__photo">
+													<img src="img/team/Jerome.png" class="team__photo-yellow"
+														alt="Jerome Bell's photo">
+													<ul class="team__social">
+														<li class="team__item team__item--facebook">
+															<a href="https://facebook.com/" class="team__link"
+																target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z" />
+																</svg>
+															</a>
+														</li>
+														<li class="team__item team__item--inst">
+															<a href="https://instagram.com/" class="team__link"
+																target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z" />
+																	<path
+																		d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z" />
+																	<path
+																		d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z" />
+																</svg>
+															</a>
+														</li>
+														<li class="team__item team__item--linked">
+															<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/"
+																class="team__link"
+																target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z" />
+																	<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z" />
+																	<path
+																		d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z" />
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<div class="team__text">
+													<h6 class="team__name descr-bold">Dianne Russell</h6>
+													<p class="team__proff text">Founder and CEO</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class=" swiper-slide">
+										<div class="team__card ">
+											<div class=" team-slide">
+												<div class="team__photo">
+													<img src="img/team/Kristin.png" class="team__photo-yellow"
+														alt="Kristin Watson's photo">
+													<ul class="team__social">
+														<li class="team__item team__item--facebook">
+															<a href="https://facebook.com/" class="team__link"
+																target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z" />
+																</svg>
+															</a>
+														</li>
+														<li class="team__item team__item--inst">
+															<a href="https://instagram.com/" class="team__link"
+																target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z" />
+																	<path
+																		d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z" />
+																	<path
+																		d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z" />
+																</svg>
+															</a>
+														</li>
+														<li class="team__item team__item--linked">
+															<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/"
+																class="team__link"
+																target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z" />
+																	<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z" />
+																	<path
+																		d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z" />
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<div class="team__text">
+													<h6 class="team__name descr-bold">Dianne Russell</h6>
+													<p class="team__proff text">Founder and CEO</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class=" swiper-slide">
+										<div class="team__card ">
+											<div class=" team-slide">
+												<div class="team__photo">
+													<img src="img/team/Marvin.png" class="team__photo-yellow"
+														alt="Marvin McKinney's photo">
+													<ul class="team__social">
+														<li class="team__item team__item--facebook">
+															<a href="https://facebook.com/" class="team__link"
+																target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z" />
+																</svg>
+															</a>
+														</li>
+														<li class="team__inst">
+															<a href="https://instagram.com/"
+																class="team__item team__item--link" target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z" />
+																	<path
+																		d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z" />
+																	<path
+																		d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z" />
+																</svg>
+															</a>
+														</li>
+														<li class="team__item team__item--linked">
+															<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/"
+																class="team__link"
+																target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z" />
+																	<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z" />
+																	<path
+																		d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z" />
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<div class="team__text">
+													<h6 class="team__name descr-bold">Dianne Russell</h6>
+													<p class="team__proff text">Founder and CEO</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class=" swiper-slide">
+										<div class="team__card">
+											<div class=" team-slide">
+												<div class="team__photo">
+													<img src="img/team/Dianne.png" class="team__photo-yellow"
+														alt="Dianne Russell's photo">
+													<ul class="team__social">
+														<li class="team__facebook">
+															<a href="https://facebook.com/" class="team__link"
+																target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z" />
+																</svg>
+															</a>
+														</li>
+														<li class="team__inst">
+															<a href="https://instagram.com/" class="team__link"
+																target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z" />
+																	<path
+																		d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z" />
+																	<path
+																		d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z" />
+																</svg>
+															</a>
+														</li>
+														<li class="team__linked">
+															<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/"
+																class="team__link"
+																target="_blank">
+																<svg width="20" height="20" viewBox="0 0 20 20"
+																	xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+																	<path
+																		d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z" />
+																	<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z" />
+																	<path
+																		d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z" />
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<div class="team__text">
+													<h6 class="team__name descr-bold">Dianne Russell</h6>
+													<p class="team__proff text">Founder and CEO</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-buttons">
+									<div class="swiper-btn team-swiper-prev swiper-button-prev">
+										<svg width="18" height="12" viewBox="0 0 18 12" fill="#424551"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071L0.292892 6.70711C-0.0976315 6.31658 -0.0976315 5.68342 0.292892 5.29289L4.79289 0.792893C5.18342 0.402369 5.81658 0.402369 6.20711 0.792893C6.59763 1.18342 6.59763 1.81658 6.20711 2.20711L3.41421 5L17 5C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7L3.41421 7L6.20711 9.79289C6.59763 10.1834 6.59763 10.8166 6.20711 11.2071Z" />
+										</svg>
+									</div>
+									<div class="swiper-btn team-swiper-next swiper-button-next">
+										<svg width="18" height="12" viewBox="0 0 18 12" fill="#424551"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z" />
+										</svg>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-pagination"></div>
-		</div>
-		<div class="slider-testimonials__button">
-			<div class="swiper-btn slider-testimonials-prev swiper-button-prev"><svg
-					width="18" height="12" viewBox="0 0 18 12" fill="#424551"
-					xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" clip-rule="evenodd"
-						d="M6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071L0.292892 6.70711C-0.0976315 6.31658 -0.0976315 5.68342 0.292892 5.29289L4.79289 0.792893C5.18342 0.402369 5.81658 0.402369 6.20711 0.792893C6.59763 1.18342 6.59763 1.81658 6.20711 2.20711L3.41421 5L17 5C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7L3.41421 7L6.20711 9.79289C6.59763 10.1834 6.59763 10.8166 6.20711 11.2071Z" />
-				</svg>
-			</div>
-			<div
-				class="swiper-btn slider-testimonials-next swiper-btn-before swiper-button-next"><svg
-					width="18" height="12" viewBox="0 0 18 12" fill="#424551"
-					xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" clip-rule="evenodd"
-						d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z" />
-				</svg>
-			</div>
-		</div>
-	</div>
-</section>
+					</section>
+					<section class="testimonials">
+						<div class="container testimonials__container">
+							<div class="testimonials__header header-center">
+								<h2 class="subtitle testimonials__subtitle">Testimonials</h2>
+								<h3 class="title testimonials__title">What our students say</h3>
+							</div>
+							<div class="testimonials__slider slider-testimonials swiper">
+								<div class="swiper-wrapper">
+									<div class="testimonials__slide swiper-slide">
+										<div class="testimonials__card-wrapper">
+											<div class="testimonials__comment">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet
+												lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar
+												eu&nbsp;sed
+												purus facilisi. Vitae id&nbsp;turpis tempus ornare turpis quis non.
+												Congue tortor in&nbsp;euismod vulputate etiam eros. Pulvinar neque
+												pharetra arcu diam maecenas diam integer&nbsp;in.
+											</div>
+											<div class="testimonials__author">
+												<img src="img/testimonials/Eleanora.jpg" alt="Портрет комментатора"
+													class="testimonials__img">
+												<div class="testimonials__author-info">
+													<p class="testimonials__name">Eleanor Pena</p>
+													<p class="testimonials__position">Position, Course</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide swiper-slide">
+										<div class="testimonials__card-wrapper">
+											<div class="testimonials__comment">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet
+												lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar
+												eu&nbsp;sed
+												purus facilisi. Vitae id&nbsp;turpis tempus ornare turpis quis non.
+												Congue tortor in&nbsp;euismod vulputate etiam eros. Pulvinar neque
+												pharetra arcu diam maecenas diam integer&nbsp;in.
+											</div>
+											<div class="testimonials__author">
+												<img src="img/testimonials/Eleanora.jpg" alt="Портрет комментатора"
+													class="testimonials__img">
+												<div class="testimonials__author-info">
+													<p class="testimonials__name">Eleanor Pena</p>
+													<p class="testimonials__position">Position, Course</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide swiper-slide">
+										<div class="testimonials__card-wrapper">
+											<div class="testimonials__comment">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet
+												lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar
+												eu&nbsp;sed
+												purus facilisi. Vitae id&nbsp;turpis tempus ornare turpis quis non.
+												Congue tortor in&nbsp;euismod vulputate etiam eros. Pulvinar neque
+												pharetra arcu diam maecenas diam integer&nbsp;in.
+											</div>
+											<div class="testimonials__author">
+												<img src="img/testimonials/Eleanora.jpg" alt="Портрет комментатора"
+													class="testimonials__img">
+												<div class="testimonials__author-info">
+													<p class="testimonials__name">Eleanor Pena</p>
+													<p class="testimonials__position">Position, Course</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide swiper-slide">
+										<div class="testimonials__card-wrapper">
+											<div class="testimonials__comment">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet
+												lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar
+												eu&nbsp;sed
+												purus facilisi. Vitae id&nbsp;turpis tempus ornare turpis quis non.
+												Congue tortor in&nbsp;euismod vulputate etiam eros. Pulvinar neque
+												pharetra arcu diam maecenas diam integer&nbsp;in.
+											</div>
+											<div class="testimonials__author">
+												<img src="img/testimonials/Eleanora.jpg" alt="Портрет комментатора"
+													class="testimonials__img">
+												<div class="testimonials__author-info">
+													<p class="testimonials__name">Eleanor Pena</p>
+													<p class="testimonials__position">Position, Course</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="slider-testimonials__button">
+								<div class="swiper-btn slider-testimonials-prev swiper-button-prev"><svg
+										width="18" height="12" viewBox="0 0 18 12" fill="#424551"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071L0.292892 6.70711C-0.0976315 6.31658 -0.0976315 5.68342 0.292892 5.29289L4.79289 0.792893C5.18342 0.402369 5.81658 0.402369 6.20711 0.792893C6.59763 1.18342 6.59763 1.81658 6.20711 2.20711L3.41421 5L17 5C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7L3.41421 7L6.20711 9.79289C6.59763 10.1834 6.59763 10.8166 6.20711 11.2071Z" />
+									</svg>
+								</div>
+								<div
+									class="swiper-btn slider-testimonials-next swiper-btn-before swiper-button-next"><svg
+										width="18" height="12" viewBox="0 0 18 12" fill="#424551"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</section>
 
-				<section class="jobs">
-	<div class="container">
-		<div class="jobs__header header-center">
-			<p class="subtitle jobs__subtitle">best jobs for you</p>
-			<h2 class="title jobs__title">Our students work here</h2>
-		</div>
-		<ul class="jobs__list">
-			<li class="jobs__item">
-				<a href="https://www.indepth-consulting.com/" target="_blank"><img src="img/jobs/InDepth.png" alt="InDepth Company"></a>
-			</li>
-			<li class="jobs__item">
-				<a href="https://www.interactsoftware.com/blog/perfect-fit-company-culture/" target="_blank"><img src="img/jobs/higher.png" alt="Higher Fit Company"></a>
-			</li>
-			<li class="jobs__item">
-				<a href="https://www.sentinelconsulting.co.uk/" target="_blank"><img src="img/jobs/org2.png" alt="Sentinal Consulting Company"></a>
-			</li>
-			<li class="jobs__item">
-				<a href="https://happyhome-mebel.ru/company/" target="_blank"><img src="img/jobs/happy.png" alt="Happy Home Company"></a>
-			</li>
-			<li class="jobs__item">
-				<a href="https://www.businessesforsale.com/" target="_blank"><img src="img/jobs/forsale.png" alt="For Sale Company"></a>
-			</li>
-			<li class="jobs__item">
-				<a href="https://sunsetrealtyteam.com/" target="_blank"><img src="img/jobs/sunset.png" alt="Sunset Reality Company"></a>
-			</li>
-			<li class="jobs__item">
-				<a href="https://atlantishealth.com/us/" target="_blank"><img src="img/jobs/atlantis.png" alt="Atlantis Health Company"></a>
-			</li>
-			<li class="jobs__item">
-				<a href="https://www.delmarwealthmanagement.com/" target="_blank"><img src="img/jobs/org1.png" alt="Del Mar Strategy Company"></a>
-			</li>
-			<li class="jobs__item">
-				<a href="https://completehealth.com/patients/about/" target="_blank"><img src="img/jobs/completehealth.png" alt="Complete Health Company"></a>
-			</li>
-			<li class="jobs__item">
-				<a href="https://www.brandcrowd.com/maker/tag/national" target="_blank"><img src="img/jobs/org3.png" alt="National Company"></a>
-			</li>
-			<li class="jobs__item">
-				<a href="https://www.ultimategymli.com/" target="_blank"><img src="img/jobs/gym.png" alt="Ultimate Gym Company"></a>
-			</li>
-		</ul>
-	</div>
-</section>
-			</div>
-			<section class="program" id="course">
-	<div class="container program__container">
-		<div class="programm__content">
-			<h2 class="subtitle about__subtitle">Course program</h2>
-			<h3 class="title about__title">What will you learn</h3>
-			<ul class="program__accordeon accordeon">
-				<li class="accordeon__item">
-					<button class="accordeon__title" data-name="accordeon-title"><span>Lesson 1.</span>Aliquet lectus urna viverra in odio.</button>
-					<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-				</li>
-				<li class="accordeon__item">
-					<button class="accordeon__title" data-name="accordeon-title"><span>Lesson 2.</span>Orci commodo, viverra orci mollis ut euismod.</button>
-					<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-				</li>
-				<li class="accordeon__item">
-					<button class="accordeon__title" data-name="accordeon-title"><span>Lesson 3.</span>Sagittis vitae facilisi rutrum amet mauris quisque vel.</button>
-					<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-				</li>
-				<li class="accordeon__item">
-					<button class="accordeon__title" data-name="accordeon-title"><span>Lesson 4.</span>In id dolor quis nunc, urna hendrerit pharetra.</button>
-					<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-				</li>
-				<li class="accordeon__item">
-					<button class="accordeon__title" data-name="accordeon-title"><span>Lesson 5.</span>Est, ut tempus id rutrum facilisi.</button>
-					<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-				</li>
-				<li class="accordeon__item">
-					<button class="accordeon__title" data-name="accordeon-title"><span>Lesson 6.</span>Amet nec in pellentesque.</button>
-					<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-				</li>
-				<li class="accordeon__item">
-					<button class="accordeon__title" data-name="accordeon-title"><span>Lesson 7.</span>Massa vel arcu mauris, id vel rhoncus mattis quis.</button>
-					<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-				</li>
-				<li class="accordeon__item">
-					<button class="accordeon__title" data-name="accordeon-title"><span>Lesson 8.</span>Neque, cursus sapien nullam id.</button>
-					<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
-				</li>
-			</ul>
-		</div>
-		<img src="img/program/illustration.png" alt="The girl is learning our program" class="program__img">
-	</div>
-
-</section>
-			<section class="blog" id="blog">
-	<div class="container">
-		<div class="blog__header">
-			<div class="blog__titles">
-				<h2 class="subtitle about__subtitle">Our blog</h2>
-				<h3 class="title about__title">Latest posts</h3>
-			</div>
-			<a href="#!" class="btn blog__blog">Go to blog</a>
-		</div>
-		<div class="blog__posts">
-			<ul class="blog__list">
-				<li class="blog__item">
-					<article class="blog-post">
-						<div class="blog-post__art">
-							<img src="img/blog/first.jpg" alt="Abstract illustration" class="blog-post__img">
-							<span class="blog-post__type podcast">Podcast</span>
+					<section class="jobs">
+						<div class="container">
+							<div class="jobs__header header-center">
+								<p class="subtitle jobs__subtitle">best jobs for you</p>
+								<h2 class="title jobs__title">Our students work here</h2>
+							</div>
+							<ul class="jobs__list">
+								<li class="jobs__item">
+									<a href="https://www.indepth-consulting.com/" target="_blank"><img
+											src="img/jobs/InDepth.png" alt="InDepth Company"></a>
+								</li>
+								<li class="jobs__item">
+									<a
+										href="https://www.interactsoftware.com/blog/perfect-fit-company-culture/"
+										target="_blank"><img src="img/jobs/higher.png"
+											alt="Higher Fit Company"></a>
+								</li>
+								<li class="jobs__item">
+									<a href="https://www.sentinelconsulting.co.uk/" target="_blank"><img
+											src="img/jobs/org2.png" alt="Sentinal Consulting Company"></a>
+								</li>
+								<li class="jobs__item">
+									<a href="https://happyhome-mebel.ru/company/" target="_blank"><img
+											src="img/jobs/happy.png" alt="Happy Home Company"></a>
+								</li>
+								<li class="jobs__item">
+									<a href="https://www.businessesforsale.com/" target="_blank"><img
+											src="img/jobs/forsale.png" alt="For Sale Company"></a>
+								</li>
+								<li class="jobs__item">
+									<a href="https://sunsetrealtyteam.com/" target="_blank"><img
+											src="img/jobs/sunset.png" alt="Sunset Reality Company"></a>
+								</li>
+								<li class="jobs__item">
+									<a href="https://atlantishealth.com/us/" target="_blank"><img
+											src="img/jobs/atlantis.png" alt="Atlantis Health Company"></a>
+								</li>
+								<li class="jobs__item">
+									<a href="https://www.delmarwealthmanagement.com/" target="_blank"><img
+											src="img/jobs/org1.png" alt="Del Mar Strategy Company"></a>
+								</li>
+								<li class="jobs__item">
+									<a href="https://completehealth.com/patients/about/" target="_blank"><img
+											src="img/jobs/completehealth.png" alt="Complete Health Company"></a>
+								</li>
+								<li class="jobs__item">
+									<a href="https://www.brandcrowd.com/maker/tag/national" target="_blank"><img
+											src="img/jobs/org3.png" alt="National Company"></a>
+								</li>
+								<li class="jobs__item">
+									<a href="https://www.ultimategymli.com/" target="_blank"><img
+											src="img/jobs/gym.png" alt="Ultimate Gym Company"></a>
+								</li>
+							</ul>
 						</div>
-						<div class="blog-post__props">
-							<p class="blog-post__direction">Marketing</p>
-							<time class="blog-post__date" datetime="2020-09-04 00:00">September 4, 2020</time>
-							<span class="blog-post__time">36 min</span>
-						</div>
-						<div class="blog-post__content">
-							<h4 class="blog-post__title descr-bold">What is traffic arbitrage and does it really make money?</h4>
-							<p class="blog-post__descr text points">Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida</p>
-							<a href="#!" class="blog-post__link link-open">Listen</a>
-						</div>
-					</article>
-				</li>
-				<li class="blog__item">
-					<article class="blog-post">
-						<div class="blog-post__art">
-							<img src="img/blog/second.jpg" alt="Abstract illustration" class="blog-post__img">
-							<span class="blog-post__type video">Video</span>
-						</div>
-						<div class="blog-post__props">
-							<p class="blog-post__direction">Management</p>
-							<time class="blog-post__date" datetime="2020-08-25 00:00">August 25, 2020</time>
-							<span class="blog-post__time">45 min</span>
-						</div>
-						<div class="blog-post__content">
-							<h4 class="blog-post__title descr-bold">What to do and who to talk to if you want to get feedback on the product</h4>
-							<p class="blog-post__descr text points">Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus</p>
-							<a href="#!" class="blog-post__link link-open">Watch</a>
-						</div>
-					</article>
-				</li>
-				<li class="blog__item">
-					<article class="blog-post">
-						<div class="blog-post__art">
-							<img src="img/blog/third.jpg" alt="Abstract illustration" class="blog-post__img">
-							<span class="blog-post__type article">Article</span>
-						</div>
-						<div class="blog-post__props">
-							<p class="blog-post__direction">Design</p>
-							<time class="blog-post__date" datetime="2020-08-08 00:00">August 8, 2020</time>
-						</div>
-						<div class="blog-post__content">
-							<h4 class="blog-post__title descr-bold">Should you choose a creative profession if you are attracted to creativity?</h4>
-							<p class="blog-post__descr text points">Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices</p>
-							<a href="#!" class="blog-post__link link-open">Read</a>
-						</div>
-					</article>
-				</li>
-			</ul>
-		</div>
-	</div>
-</section>
-			<section class="info" id="info">
-	<div class="container info__container">
-		<div class="info__content">
-			<p class="subtitle info__subtitle">Contact info</p>
-			<h2 class="title info__title">Get in touch</h2>
-			<div class="flex-container">
-				<div class="info__info--flex">
-					<address class="info__email feedback">
-						<span class="feedback__subtitle">Talk to us:</span>
-						<a href="mailto:hello@createx.com" class="feedback__info feedback-email">hello@createx.com</a>
-					</address>
-					<address class="info__phone feedback mt-24">
-						<span class="feedback__subtitle">Call us:</span>
-						<a href="tel:4055550128" class="feedback__info feedback-phone">(405) 555-0128</a>
-					</address>
-					<address class="info__adrees feedback mt-24">
-						<span class="feedback__subtitle">Address:</span>
-						<div class="feedback__info">2464 Royal Ln. Mesa, New Jersey 45463, USA
-						</div>
-					</address>
+					</section>
 				</div>
-				<div class="info__social">
-					<h4 class="info__social--title">Follow Us:</h4>
-					<ul class="info__list social-list mt-24">
-						<li class="info__item social-item">
-							<a href="http://www.facebook.com.vn/" target="_blank" class="info__link social-link">
-								<svg width="12" height="22" viewBox="0 0 12 22" fill="#787A80"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M11.5628 0.00457747L8.78558 0C5.66542 0 3.64903 2.12509 3.64903 5.41423V7.91055H0.85662C0.615322 7.91055 0.419922 8.1115 0.419922 8.35937V11.9763C0.419922 12.2241 0.615545 12.4249 0.85662 12.4249H3.64903V21.5514C3.64903 21.7993 3.84443 22 4.08573 22H7.72904C7.97033 22 8.16573 21.799 8.16573 21.5514V12.4249H11.4307C11.672 12.4249 11.8674 12.2241 11.8674 11.9763L11.8688 8.35937C11.8688 8.24036 11.8226 8.12638 11.7409 8.04215C11.6591 7.95793 11.5477 7.91055 11.4318 7.91055H8.16573V5.79439C8.16573 4.77728 8.40168 4.26094 9.6915 4.26094L11.5624 4.26025C11.8035 4.26025 11.9989 4.0593 11.9989 3.81166V0.453169C11.9989 0.205757 11.8037 0.00503522 11.5628 0.00457747Z" />
-								</svg>
-							</a>
-						</li>
-						<li class="info__item social-item">
-							<a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B2%D0%B8%D1%82%D1%82%D0%B5%D1%80"
-								target="_blank" class="info__link social-link">
-								<svg width="22" height="18" viewBox="0 0 22 18" fill="#787A80"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M21.5 2.77233C20.7271 3.10027 19.8978 3.32267 19.0264 3.42196C19.9161 2.91181 20.5972 2.10263 20.92 1.1414C20.0854 1.61383 19.1642 1.95688 18.1826 2.14285C17.3966 1.33994 16.2785 0.839844 15.0384 0.839844C12.6593 0.839844 10.7303 2.68691 10.7303 4.9637C10.7303 5.2866 10.7683 5.60199 10.8418 5.90357C7.26201 5.73141 4.08768 4.08917 1.96314 1.59372C1.59176 2.20189 1.38049 2.91053 1.38049 3.66697C1.38049 5.09814 2.14161 6.36093 3.2964 7.09973C2.5904 7.07713 1.92639 6.89116 1.34508 6.58205V6.63357C1.34508 8.63141 2.83056 10.2988 4.80024 10.6783C4.43936 10.7713 4.05882 10.8228 3.66514 10.8228C3.38696 10.8228 3.11794 10.7964 2.85417 10.7461C3.40267 12.3859 4.99315 13.5783 6.87756 13.611C5.40388 14.7167 3.54573 15.3739 1.52749 15.3739C1.17976 15.3739 0.837236 15.3537 0.5 15.3173C2.40671 16.4896 4.67036 17.1732 7.10327 17.1732C15.028 17.1732 19.3597 10.8881 19.3597 5.43741L19.3453 4.90341C20.1917 4.32537 20.9239 3.59912 21.5 2.77233Z" />
-								</svg>
-							</a>
-						</li>
-						<li class="info__item social-item">
-							<a href="https://www.youtube.com/watch?v=yzifuLYXPSg&ab_channel=RAPFULLALBUMS"
-								target="_blank" class="info__link social-link">
-								<svg width="24" height="18" viewBox="0 0 24 18" fill="#787A80"
-									xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd"
-										d="M21.3903 1.11358C22.4182 1.39044 23.2288 2.20086 23.5055 3.22899C24.0197 5.10691 23.9999 9.02132 23.9999 9.02132C23.9999 9.02132 23.9999 12.9158 23.5057 14.7939C23.2288 15.8218 22.4184 16.6324 21.3903 16.9091C19.5122 17.4035 12 17.4035 12 17.4035C12 17.4035 4.50731 17.4035 2.60961 16.8895C1.58148 16.6127 0.771054 15.802 0.4942 14.7741C0 12.9158 0 9.00154 0 9.00154C0 9.00154 0 5.10691 0.4942 3.22899C0.770871 2.20104 1.60125 1.37066 2.60943 1.09399C4.48753 0.599609 11.9998 0.599609 11.9998 0.599609C11.9998 0.599609 19.5122 0.599609 21.3903 1.11358ZM15.8549 9.00158L9.60788 12.5996V5.40355L15.8549 9.00158Z" />
-								</svg>
-							</a>
-						</li>
-						<li class="info__item social-item">
-							<a href="https://web.telegram.org/k/" target="_blank" class="info__link social-link">
-								<svg width="22" height="20" viewBox="0 0 22 20" fill="#787A80"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M8.63262 13.1813L8.2687 18.7653C8.78938 18.7653 9.01488 18.5213 9.2853 18.2283L11.7264 15.6833L16.7847 19.7243C17.7124 20.2883 18.366 19.9913 18.6163 18.7933L21.9365 1.8214L21.9374 1.8204C22.2317 0.324404 21.4415 -0.260593 20.5377 0.106405L1.02135 8.25736C-0.310594 8.82136 -0.290427 9.63136 0.794932 9.99835L5.78447 11.6913L17.3742 3.78039C17.9196 3.38639 18.4155 3.60439 18.0076 3.99839L8.63262 13.1813Z" />
-								</svg>
-							</a>
-						</li>
-						<li class="info__item social-item">
-							<a href="https://en.wikipedia.org/wiki/Instagram" target="_blank"
-								class="info__link social-link">
-								<svg width="21" height="20" viewBox="0 0 21 20" fill="#787A80"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M19.9804 5.88005C19.9336 4.81738 19.7617 4.0868 19.5156 3.45374C19.2616 2.78176 18.8709 2.18014 18.359 1.68002C17.8589 1.1721 17.2533 0.777435 16.5891 0.527447C15.9524 0.281274 15.2256 0.109427 14.163 0.0625732C13.0923 0.0117516 12.7525 0 10.0371 0C7.32172 0 6.98185 0.0117516 5.9152 0.0586052C4.85253 0.105459 4.12195 0.277459 3.48904 0.523479C2.81692 0.777435 2.2153 1.16814 1.71517 1.68002C1.20726 2.18014 0.812742 2.78573 0.562602 3.44992C0.31643 4.0868 0.144583 4.81341 0.0977294 5.87609C0.0469078 6.9467 0.0351562 7.28658 0.0351562 10.002C0.0351562 12.7173 0.0469078 13.0572 0.0937614 14.1239C0.140615 15.1865 0.312615 15.9171 0.558787 16.5502C0.812742 17.2221 1.20726 17.8238 1.71517 18.3239C2.2153 18.8318 2.82088 19.2265 3.48507 19.4765C4.12195 19.7226 4.84856 19.8945 5.91139 19.9413C6.97788 19.9883 7.31791 19.9999 10.0333 19.9999C12.7486 19.9999 13.0885 19.9883 14.1552 19.9413C15.2178 19.8945 15.9484 19.7226 16.5813 19.4765C17.9254 18.9568 18.9881 17.8941 19.5078 16.5502C19.7538 15.9133 19.9258 15.1865 19.9726 14.1239C20.0195 13.0572 20.0312 12.7173 20.0312 10.002C20.0312 7.28658 20.0273 6.9467 19.9804 5.88005ZM18.1794 14.0457C18.1364 15.0225 17.9723 15.5499 17.8355 15.9015C17.4995 16.7728 16.808 17.4643 15.9367 17.8004C15.585 17.9372 15.0538 18.1012 14.0808 18.1441C13.026 18.1911 12.7096 18.2027 10.0411 18.2027C7.37255 18.2027 7.0522 18.1911 6.00113 18.1441C5.02437 18.1012 4.49693 17.9372 4.1453 17.8004C3.71171 17.6402 3.31704 17.3862 2.9967 17.0541C2.6646 16.7298 2.41065 16.3391 2.2504 15.9055C2.11365 15.5539 1.94959 15.0225 1.9067 14.0497C1.8597 12.9948 1.8481 12.6783 1.8481 10.0097C1.8481 7.34122 1.8597 7.02087 1.9067 5.96995C1.94959 4.99319 2.11365 4.46575 2.2504 4.11412C2.41065 3.68038 2.6646 3.28586 3.00067 2.96536C3.32483 2.63327 3.71553 2.37931 4.14927 2.21921C4.5009 2.08247 5.03231 1.9184 6.00509 1.87537C7.05999 1.82851 7.37652 1.81676 10.0449 1.81676C12.7174 1.81676 13.0337 1.82851 14.0848 1.87537C15.0616 1.9184 15.589 2.08247 15.9406 2.21921C16.3742 2.37931 16.7689 2.63327 17.0892 2.96536C17.4213 3.28967 17.6753 3.68038 17.8355 4.11412C17.9723 4.46575 18.1364 4.99701 18.1794 5.96995C18.2262 7.02484 18.238 7.34122 18.238 10.0097C18.238 12.6783 18.2262 12.9908 18.1794 14.0457Z" />
-									<path
-										d="M10.0371 4.86423C7.20069 4.86423 4.89937 7.1654 4.89937 10.002C4.89937 12.8385 7.20069 15.1397 10.0371 15.1397C12.8736 15.1397 15.1748 12.8385 15.1748 10.002C15.1748 7.1654 12.8736 4.86423 10.0371 4.86423ZM10.0371 13.3347C8.19698 13.3347 6.70438 11.8422 6.70438 10.002C6.70438 8.16169 8.19698 6.66924 10.0371 6.66924C11.8774 6.66924 13.3698 8.16169 13.3698 10.002C13.3698 11.8422 11.8774 13.3347 10.0371 13.3347Z" />
-									<path
-										d="M16.5776 4.6611C16.5776 5.32346 16.0405 5.86053 15.378 5.86053C14.7156 5.86053 14.1785 5.32346 14.1785 4.6611C14.1785 3.99858 14.7156 3.46167 15.378 3.46167C16.0405 3.46167 16.5776 3.99858 16.5776 4.6611Z" />
-								</svg>
-							</a>
-						</li>
-						<li class="info__item social-item">
-							<a href="https://ru.wikipedia.org/wiki/LinkedIn" target="_blank"
-								class="info__link social-link">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="#787A80"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M19.995 20L20 19.9992V12.6642C20 9.07583 19.2275 6.31167 15.0325 6.31167C13.0158 6.31167 11.6625 7.41833 11.11 8.4675H11.0517V6.64667H7.07416V19.9992H11.2158V13.3875C11.2158 11.6467 11.5458 9.96334 13.7017 9.96334C15.8258 9.96334 15.8575 11.95 15.8575 13.4992V20H19.995Z" />
-									<path d="M0.329995 6.6475H4.47666V20H0.329995V6.6475Z" />
-									<path
-										d="M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0Z" />
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="info__map"> 
-			<iframe
-				src="https://yandex.ru/map-widget/v1/?um=constructor%3A33ec81d755b753fc8ccba1f9c02269d1426eac689b2b0ecd916f91c5d3865bfc&amp;source=constructor"></iframe>
-		</div>
-	</div>
-</section>
-			<section class="questions">
-	<div class="container questions__container">
-		<img src="img/questions/illustration.png" alt="Abstract illustration" class="questions__img">
-		<div class="questions__content">
-			<h2 class="subtitle questions__subtitle">Any questions?</h2>
-			<p class="title questions__title">Drop us a line</p>
-			<form action="#" class="questions__form">
-				<div class="questions__input">
-					<label for="name" class="questions__title text">First Name*</label>
-					<input type="text" id="name" name="name" required minlength="2" class="form__input"
-						placeholder="Your first name">
-				</div>
-				<div class="questions__input">
-					<label for="last" class="questions__title text">Last Name*</label>
-					<input type="text" id="last" name="last" required minlength="2" class="form__input"
-						placeholder="Your last name">
-				</div>
-				<div class="questions__input">
-					<label for="email" class="questions__title text">Email*</label>
-					<input type="email" id="email" name="email" required minlength="4" class="form__input"
-						placeholder="Your working email">
-				</div>
-				<div class="questions__input">
-					<label for="phone" class="questions__title text">Phone</label>
-					<input type="tel" id="phone" name="phone" minlength="11" class="form__input"
-						placeholder="Your phone number">
-				</div>
-				<div class="questions__input questions__textarea">
-					<label for="textarea" class="questions__title text">Message*</label>
-					<textarea name="textarea" id="textarea" required class="form__input"
-						placeholder="Your message"></textarea>
-				</div>
-				<div class="questions__input questions__agreement">
-					<div class="questions__policy">
-						<label class="custom-checkbox">
-							<input required type="checkbox" class="js-check">
-							<span class="checkbox" tabindex="0">
-								<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="128px"
-									height="128px">
-									<path
-										d="M57.658,12.643c1.854,1.201,2.384,3.678,1.183,5.532l-25.915,40c-0.682,1.051-1.815,1.723-3.064,1.814	C29.764,59.997,29.665,60,29.568,60c-1.146,0-2.241-0.491-3.003-1.358L13.514,43.807c-1.459-1.659-1.298-4.186,0.36-5.646	c1.662-1.46,4.188-1.296,5.646,0.361l9.563,10.87l23.043-35.567C53.329,11.971,55.806,11.442,57.658,12.643z" />
-								</svg>
-							</span>
-							<span class="questions__policy--agree text">I agree to receive communications from Createx Online
-								School</span>
-						</label>
+				<section class="program" id="course">
+					<div class="container program__container">
+						<div class="programm__content">
+							<h2 class="subtitle about__subtitle">Course program</h2>
+							<h3 class="title about__title">What will you learn</h3>
+							<ul class="program__accordeon accordeon">
+								<li class="accordeon__item">
+									<button class="accordeon__title" data-name="accordeon-title"><span>Lesson
+											1.</span>Aliquet lectus urna viverra in odio.</button>
+									<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti
+										rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare.
+										Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus,
+										odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+								</li>
+								<li class="accordeon__item">
+									<button class="accordeon__title" data-name="accordeon-title"><span>Lesson
+											2.</span>Orci commodo, viverra orci mollis ut euismod.</button>
+									<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti
+										rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare.
+										Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus,
+										odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+								</li>
+								<li class="accordeon__item">
+									<button class="accordeon__title" data-name="accordeon-title"><span>Lesson
+											3.</span>Sagittis vitae facilisi rutrum amet mauris quisque vel.</button>
+									<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti
+										rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare.
+										Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus,
+										odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+								</li>
+								<li class="accordeon__item">
+									<button class="accordeon__title" data-name="accordeon-title"><span>Lesson
+											4.</span>In id dolor quis nunc, urna hendrerit pharetra.</button>
+									<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti
+										rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare.
+										Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus,
+										odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+								</li>
+								<li class="accordeon__item">
+									<button class="accordeon__title" data-name="accordeon-title"><span>Lesson
+											5.</span>Est, ut tempus id rutrum facilisi.</button>
+									<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti
+										rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare.
+										Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus,
+										odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+								</li>
+								<li class="accordeon__item">
+									<button class="accordeon__title" data-name="accordeon-title"><span>Lesson
+											6.</span>Amet nec in pellentesque.</button>
+									<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti
+										rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare.
+										Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus,
+										odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+								</li>
+								<li class="accordeon__item">
+									<button class="accordeon__title" data-name="accordeon-title"><span>Lesson
+											7.</span>Massa vel arcu mauris, id vel rhoncus mattis quis.</button>
+									<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti
+										rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare.
+										Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus,
+										odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+								</li>
+								<li class="accordeon__item">
+									<button class="accordeon__title" data-name="accordeon-title"><span>Lesson
+											8.</span>Neque, cursus sapien nullam id.</button>
+									<p class="accordeon__descr hidden text">Nulla amet, sagittis potenti
+										rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare.
+										Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus,
+										odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus,
+										arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+								</li>
+							</ul>
+						</div>
+						<img src="img/program/illustration.png"
+							alt="The girl is learning our program" class="program__img">
 					</div>
-					<button class="questions__btn btn" type="submit" disabled>Send message</button>
+
+				</section>
+				<section class="blog" id="blog">
+					<div class="container">
+						<div class="blog__header">
+							<div class="blog__titles">
+								<h2 class="subtitle about__subtitle">Our blog</h2>
+								<h3 class="title about__title">Latest posts</h3>
+							</div>
+							<a href="#!" class="btn blog__blog">Go to blog</a>
+						</div>
+						<div class="blog__posts">
+							<ul class="blog__list">
+								<li class="blog__item">
+									<article class="blog-post">
+										<div class="blog-post__art">
+											<img src="img/blog/first.jpg" alt="Abstract illustration"
+												class="blog-post__img">
+											<span class="blog-post__type podcast">Podcast</span>
+										</div>
+										<div class="blog-post__props">
+											<p class="blog-post__direction">Marketing</p>
+											<time class="blog-post__date" datetime="2020-09-04 00:00">September
+												4, 2020</time>
+											<span class="blog-post__time">36 min</span>
+										</div>
+										<div class="blog-post__content">
+											<h4 class="blog-post__title descr-bold">What is traffic arbitrage and
+												does it really make money?</h4>
+											<p class="blog-post__descr text points">Pharetra, ullamcorper iaculis
+												viverra parturient sed id sed. Convallis proin dignissim lacus,
+												purus gravida</p>
+											<a href="#!" class="blog-post__link link-open">Listen</a>
+										</div>
+									</article>
+								</li>
+								<li class="blog__item">
+									<article class="blog-post">
+										<div class="blog-post__art">
+											<img src="img/blog/second.jpg" alt="Abstract illustration"
+												class="blog-post__img">
+											<span class="blog-post__type video">Video</span>
+										</div>
+										<div class="blog-post__props">
+											<p class="blog-post__direction">Management</p>
+											<time class="blog-post__date" datetime="2020-08-25 00:00">August 25,
+												2020</time>
+											<span class="blog-post__time">45 min</span>
+										</div>
+										<div class="blog-post__content">
+											<h4 class="blog-post__title descr-bold">What to do and who to talk to
+												if you want to get feedback on the product</h4>
+											<p class="blog-post__descr text points">Neque a, senectus consectetur
+												odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis
+												faucibus Neque a, senectus consectetur odio in aliquet nec eu.
+												Ultricies ac nibh urna urna sagittis faucibus</p>
+											<a href="#!" class="blog-post__link link-open">Watch</a>
+										</div>
+									</article>
+								</li>
+								<li class="blog__item">
+									<article class="blog-post">
+										<div class="blog-post__art">
+											<img src="img/blog/third.jpg" alt="Abstract illustration"
+												class="blog-post__img">
+											<span class="blog-post__type article">Article</span>
+										</div>
+										<div class="blog-post__props">
+											<p class="blog-post__direction">Design</p>
+											<time class="blog-post__date" datetime="2020-08-08 00:00">August 8,
+												2020</time>
+										</div>
+										<div class="blog-post__content">
+											<h4 class="blog-post__title descr-bold">Should you choose a creative
+												profession if you are attracted to creativity?</h4>
+											<p class="blog-post__descr text points">Curabitur nisl tincidunt eros
+												venenatis vestibulum ac placerat. Tortor, viverra sed vulputate
+												ultrices Curabitur nisl tincidunt eros venenatis vestibulum ac
+												placerat. Tortor, viverra sed vulputate ultrices</p>
+											<a href="#!" class="blog-post__link link-open">Read</a>
+										</div>
+									</article>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="info" id="info">
+					<div class="container info__container">
+						<div class="info__content">
+							<p class="subtitle info__subtitle">Contact info</p>
+							<h2 class="title info__title">Get in touch</h2>
+							<div class="flex-container">
+								<div class="info__info--flex">
+									<address class="info__email feedback">
+										<span class="feedback__subtitle">Talk to us:</span>
+										<a href="mailto:hello@createx.com"
+											class="feedback__info feedback-email">hello@createx.com</a>
+									</address>
+									<address class="info__phone feedback mt-24">
+										<span class="feedback__subtitle">Call us:</span>
+										<a href="tel:4055550128" class="feedback__info feedback-phone">(405)
+											555-0128</a>
+									</address>
+									<address class="info__adrees feedback mt-24">
+										<span class="feedback__subtitle">Address:</span>
+										<div class="feedback__info">2464 Royal Ln. Mesa, New Jersey 45463, USA
+										</div>
+									</address>
+								</div>
+								<div class="info__social">
+									<h4 class="info__social--title">Follow Us:</h4>
+									<ul class="info__list social-list mt-24">
+										<li class="info__item social-item">
+											<a href="http://www.facebook.com.vn/" target="_blank"
+												class="info__link social-link">
+												<svg width="12" height="22" viewBox="0 0 12 22" fill="#787A80"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M11.5628 0.00457747L8.78558 0C5.66542 0 3.64903 2.12509 3.64903 5.41423V7.91055H0.85662C0.615322 7.91055 0.419922 8.1115 0.419922 8.35937V11.9763C0.419922 12.2241 0.615545 12.4249 0.85662 12.4249H3.64903V21.5514C3.64903 21.7993 3.84443 22 4.08573 22H7.72904C7.97033 22 8.16573 21.799 8.16573 21.5514V12.4249H11.4307C11.672 12.4249 11.8674 12.2241 11.8674 11.9763L11.8688 8.35937C11.8688 8.24036 11.8226 8.12638 11.7409 8.04215C11.6591 7.95793 11.5477 7.91055 11.4318 7.91055H8.16573V5.79439C8.16573 4.77728 8.40168 4.26094 9.6915 4.26094L11.5624 4.26025C11.8035 4.26025 11.9989 4.0593 11.9989 3.81166V0.453169C11.9989 0.205757 11.8037 0.00503522 11.5628 0.00457747Z" />
+												</svg>
+											</a>
+										</li>
+										<li class="info__item social-item">
+											<a
+												href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B2%D0%B8%D1%82%D1%82%D0%B5%D1%80"
+												target="_blank" class="info__link social-link">
+												<svg width="22" height="18" viewBox="0 0 22 18" fill="#787A80"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M21.5 2.77233C20.7271 3.10027 19.8978 3.32267 19.0264 3.42196C19.9161 2.91181 20.5972 2.10263 20.92 1.1414C20.0854 1.61383 19.1642 1.95688 18.1826 2.14285C17.3966 1.33994 16.2785 0.839844 15.0384 0.839844C12.6593 0.839844 10.7303 2.68691 10.7303 4.9637C10.7303 5.2866 10.7683 5.60199 10.8418 5.90357C7.26201 5.73141 4.08768 4.08917 1.96314 1.59372C1.59176 2.20189 1.38049 2.91053 1.38049 3.66697C1.38049 5.09814 2.14161 6.36093 3.2964 7.09973C2.5904 7.07713 1.92639 6.89116 1.34508 6.58205V6.63357C1.34508 8.63141 2.83056 10.2988 4.80024 10.6783C4.43936 10.7713 4.05882 10.8228 3.66514 10.8228C3.38696 10.8228 3.11794 10.7964 2.85417 10.7461C3.40267 12.3859 4.99315 13.5783 6.87756 13.611C5.40388 14.7167 3.54573 15.3739 1.52749 15.3739C1.17976 15.3739 0.837236 15.3537 0.5 15.3173C2.40671 16.4896 4.67036 17.1732 7.10327 17.1732C15.028 17.1732 19.3597 10.8881 19.3597 5.43741L19.3453 4.90341C20.1917 4.32537 20.9239 3.59912 21.5 2.77233Z" />
+												</svg>
+											</a>
+										</li>
+										<li class="info__item social-item">
+											<a
+												href="https://www.youtube.com/watch?v=yzifuLYXPSg&ab_channel=RAPFULLALBUMS"
+												target="_blank" class="info__link social-link">
+												<svg width="24" height="18" viewBox="0 0 24 18" fill="#787A80"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M21.3903 1.11358C22.4182 1.39044 23.2288 2.20086 23.5055 3.22899C24.0197 5.10691 23.9999 9.02132 23.9999 9.02132C23.9999 9.02132 23.9999 12.9158 23.5057 14.7939C23.2288 15.8218 22.4184 16.6324 21.3903 16.9091C19.5122 17.4035 12 17.4035 12 17.4035C12 17.4035 4.50731 17.4035 2.60961 16.8895C1.58148 16.6127 0.771054 15.802 0.4942 14.7741C0 12.9158 0 9.00154 0 9.00154C0 9.00154 0 5.10691 0.4942 3.22899C0.770871 2.20104 1.60125 1.37066 2.60943 1.09399C4.48753 0.599609 11.9998 0.599609 11.9998 0.599609C11.9998 0.599609 19.5122 0.599609 21.3903 1.11358ZM15.8549 9.00158L9.60788 12.5996V5.40355L15.8549 9.00158Z" />
+												</svg>
+											</a>
+										</li>
+										<li class="info__item social-item">
+											<a href="https://web.telegram.org/k/" target="_blank"
+												class="info__link social-link">
+												<svg width="22" height="20" viewBox="0 0 22 20" fill="#787A80"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M8.63262 13.1813L8.2687 18.7653C8.78938 18.7653 9.01488 18.5213 9.2853 18.2283L11.7264 15.6833L16.7847 19.7243C17.7124 20.2883 18.366 19.9913 18.6163 18.7933L21.9365 1.8214L21.9374 1.8204C22.2317 0.324404 21.4415 -0.260593 20.5377 0.106405L1.02135 8.25736C-0.310594 8.82136 -0.290427 9.63136 0.794932 9.99835L5.78447 11.6913L17.3742 3.78039C17.9196 3.38639 18.4155 3.60439 18.0076 3.99839L8.63262 13.1813Z" />
+												</svg>
+											</a>
+										</li>
+										<li class="info__item social-item">
+											<a href="https://en.wikipedia.org/wiki/Instagram" target="_blank"
+												class="info__link social-link">
+												<svg width="21" height="20" viewBox="0 0 21 20" fill="#787A80"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M19.9804 5.88005C19.9336 4.81738 19.7617 4.0868 19.5156 3.45374C19.2616 2.78176 18.8709 2.18014 18.359 1.68002C17.8589 1.1721 17.2533 0.777435 16.5891 0.527447C15.9524 0.281274 15.2256 0.109427 14.163 0.0625732C13.0923 0.0117516 12.7525 0 10.0371 0C7.32172 0 6.98185 0.0117516 5.9152 0.0586052C4.85253 0.105459 4.12195 0.277459 3.48904 0.523479C2.81692 0.777435 2.2153 1.16814 1.71517 1.68002C1.20726 2.18014 0.812742 2.78573 0.562602 3.44992C0.31643 4.0868 0.144583 4.81341 0.0977294 5.87609C0.0469078 6.9467 0.0351562 7.28658 0.0351562 10.002C0.0351562 12.7173 0.0469078 13.0572 0.0937614 14.1239C0.140615 15.1865 0.312615 15.9171 0.558787 16.5502C0.812742 17.2221 1.20726 17.8238 1.71517 18.3239C2.2153 18.8318 2.82088 19.2265 3.48507 19.4765C4.12195 19.7226 4.84856 19.8945 5.91139 19.9413C6.97788 19.9883 7.31791 19.9999 10.0333 19.9999C12.7486 19.9999 13.0885 19.9883 14.1552 19.9413C15.2178 19.8945 15.9484 19.7226 16.5813 19.4765C17.9254 18.9568 18.9881 17.8941 19.5078 16.5502C19.7538 15.9133 19.9258 15.1865 19.9726 14.1239C20.0195 13.0572 20.0312 12.7173 20.0312 10.002C20.0312 7.28658 20.0273 6.9467 19.9804 5.88005ZM18.1794 14.0457C18.1364 15.0225 17.9723 15.5499 17.8355 15.9015C17.4995 16.7728 16.808 17.4643 15.9367 17.8004C15.585 17.9372 15.0538 18.1012 14.0808 18.1441C13.026 18.1911 12.7096 18.2027 10.0411 18.2027C7.37255 18.2027 7.0522 18.1911 6.00113 18.1441C5.02437 18.1012 4.49693 17.9372 4.1453 17.8004C3.71171 17.6402 3.31704 17.3862 2.9967 17.0541C2.6646 16.7298 2.41065 16.3391 2.2504 15.9055C2.11365 15.5539 1.94959 15.0225 1.9067 14.0497C1.8597 12.9948 1.8481 12.6783 1.8481 10.0097C1.8481 7.34122 1.8597 7.02087 1.9067 5.96995C1.94959 4.99319 2.11365 4.46575 2.2504 4.11412C2.41065 3.68038 2.6646 3.28586 3.00067 2.96536C3.32483 2.63327 3.71553 2.37931 4.14927 2.21921C4.5009 2.08247 5.03231 1.9184 6.00509 1.87537C7.05999 1.82851 7.37652 1.81676 10.0449 1.81676C12.7174 1.81676 13.0337 1.82851 14.0848 1.87537C15.0616 1.9184 15.589 2.08247 15.9406 2.21921C16.3742 2.37931 16.7689 2.63327 17.0892 2.96536C17.4213 3.28967 17.6753 3.68038 17.8355 4.11412C17.9723 4.46575 18.1364 4.99701 18.1794 5.96995C18.2262 7.02484 18.238 7.34122 18.238 10.0097C18.238 12.6783 18.2262 12.9908 18.1794 14.0457Z" />
+													<path
+														d="M10.0371 4.86423C7.20069 4.86423 4.89937 7.1654 4.89937 10.002C4.89937 12.8385 7.20069 15.1397 10.0371 15.1397C12.8736 15.1397 15.1748 12.8385 15.1748 10.002C15.1748 7.1654 12.8736 4.86423 10.0371 4.86423ZM10.0371 13.3347C8.19698 13.3347 6.70438 11.8422 6.70438 10.002C6.70438 8.16169 8.19698 6.66924 10.0371 6.66924C11.8774 6.66924 13.3698 8.16169 13.3698 10.002C13.3698 11.8422 11.8774 13.3347 10.0371 13.3347Z" />
+													<path
+														d="M16.5776 4.6611C16.5776 5.32346 16.0405 5.86053 15.378 5.86053C14.7156 5.86053 14.1785 5.32346 14.1785 4.6611C14.1785 3.99858 14.7156 3.46167 15.378 3.46167C16.0405 3.46167 16.5776 3.99858 16.5776 4.6611Z" />
+												</svg>
+											</a>
+										</li>
+										<li class="info__item social-item">
+											<a href="https://ru.wikipedia.org/wiki/LinkedIn" target="_blank"
+												class="info__link social-link">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="#787A80"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M19.995 20L20 19.9992V12.6642C20 9.07583 19.2275 6.31167 15.0325 6.31167C13.0158 6.31167 11.6625 7.41833 11.11 8.4675H11.0517V6.64667H7.07416V19.9992H11.2158V13.3875C11.2158 11.6467 11.5458 9.96334 13.7017 9.96334C15.8258 9.96334 15.8575 11.95 15.8575 13.4992V20H19.995Z" />
+													<path d="M0.329995 6.6475H4.47666V20H0.329995V6.6475Z" />
+													<path
+														d="M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0Z" />
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="info__map">
+							<iframe
+								src="https://yandex.ru/map-widget/v1/?um=constructor%3A33ec81d755b753fc8ccba1f9c02269d1426eac689b2b0ecd916f91c5d3865bfc&amp;source=constructor"></iframe>
+						</div>
+					</div>
+				</section>
+				<section class="questions">
+					<div class="container questions__container">
+						<img src="img/questions/illustration.png" alt="Abstract illustration"
+							class="questions__img">
+						<div class="questions__content">
+							<h2 class="subtitle questions__subtitle">Any questions?</h2>
+							<p class="title questions__title">Drop us a line</p>
+							<form action="#" class="questions__form">
+								<div class="questions__input">
+									<label for="name" class="questions__title text">First Name*</label>
+									<input type="text" id="name" name="name" required minlength="2"
+										class="form__input"
+										placeholder="Your first name">
+								</div>
+								<div class="questions__input">
+									<label for="last" class="questions__title text">Last Name*</label>
+									<input type="text" id="last" name="last" required minlength="2"
+										class="form__input"
+										placeholder="Your last name">
+								</div>
+								<div class="questions__input">
+									<label for="email" class="questions__title text">Email*</label>
+									<input type="email" id="email" name="email" required minlength="4"
+										class="form__input"
+										placeholder="Your working email">
+								</div>
+								<div class="questions__input">
+									<label for="phone" class="questions__title text">Phone</label>
+									<input type="tel" id="phone" name="phone" minlength="11"
+										class="form__input"
+										placeholder="Your phone number">
+								</div>
+								<div class="questions__input questions__textarea">
+									<label for="textarea" class="questions__title text">Message*</label>
+									<textarea name="textarea" id="textarea" required class="form__input"
+										placeholder="Your message"></textarea>
+								</div>
+								<div class="questions__input questions__agreement">
+									<div class="questions__policy">
+										<label class="custom-checkbox">
+											<input required type="checkbox" class="js-check">
+											<span class="checkbox" tabindex="0">
+												<svg fill="#000000" xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 72 72" width="128px"
+													height="128px">
+													<path
+														d="M57.658,12.643c1.854,1.201,2.384,3.678,1.183,5.532l-25.915,40c-0.682,1.051-1.815,1.723-3.064,1.814	C29.764,59.997,29.665,60,29.568,60c-1.146,0-2.241-0.491-3.003-1.358L13.514,43.807c-1.459-1.659-1.298-4.186,0.36-5.646	c1.662-1.46,4.188-1.296,5.646,0.361l9.563,10.87l23.043-35.567C53.329,11.971,55.806,11.442,57.658,12.643z" />
+												</svg>
+											</span>
+											<span class="questions__policy--agree text">I agree to receive
+												communications from Createx Online
+												School</span>
+										</label>
+									</div>
+									<button class="questions__btn btn" type="submit" disabled>Send message</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container container">
+					<div class="footer__column footer__column--280">
+						<h2 class="visually-hidden">Footer site map and contacts</h2>
+						<img src="img/logo/logo_white.png" alt="Company's logo"
+							class="footer__logo">
+						<p class="footer__descr">Createx Online School is a leader in online
+							studying. We have lots of courses and programs from the main market
+							experts. We provide relevant approaches to online learning, internships
+							and employment in the largest companies in the country. </p>
+						<ul class="footer__list--social social-list">
+							<li class="footer__item social-item">
+								<a href="http://www.facebook.com.vn/" target="_blank"
+									class="footer__link social-link">
+									<svg width="12" height="22" viewBox="0 0 12 22" fill="#787A80"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M11.5628 0.00457747L8.78558 0C5.66542 0 3.64903 2.12509 3.64903 5.41423V7.91055H0.85662C0.615322 7.91055 0.419922 8.1115 0.419922 8.35937V11.9763C0.419922 12.2241 0.615545 12.4249 0.85662 12.4249H3.64903V21.5514C3.64903 21.7993 3.84443 22 4.08573 22H7.72904C7.97033 22 8.16573 21.799 8.16573 21.5514V12.4249H11.4307C11.672 12.4249 11.8674 12.2241 11.8674 11.9763L11.8688 8.35937C11.8688 8.24036 11.8226 8.12638 11.7409 8.04215C11.6591 7.95793 11.5477 7.91055 11.4318 7.91055H8.16573V5.79439C8.16573 4.77728 8.40168 4.26094 9.6915 4.26094L11.5624 4.26025C11.8035 4.26025 11.9989 4.0593 11.9989 3.81166V0.453169C11.9989 0.205757 11.8037 0.00503522 11.5628 0.00457747Z" />
+									</svg>
+								</a>
+							</li>
+							<li class="footer__item social-item">
+								<a
+									href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B2%D0%B8%D1%82%D1%82%D0%B5%D1%80"
+									target="_blank" class="footer__link social-link">
+									<svg width="22" height="18" viewBox="0 0 22 18" fill="#787A80"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M21.5 2.77233C20.7271 3.10027 19.8978 3.32267 19.0264 3.42196C19.9161 2.91181 20.5972 2.10263 20.92 1.1414C20.0854 1.61383 19.1642 1.95688 18.1826 2.14285C17.3966 1.33994 16.2785 0.839844 15.0384 0.839844C12.6593 0.839844 10.7303 2.68691 10.7303 4.9637C10.7303 5.2866 10.7683 5.60199 10.8418 5.90357C7.26201 5.73141 4.08768 4.08917 1.96314 1.59372C1.59176 2.20189 1.38049 2.91053 1.38049 3.66697C1.38049 5.09814 2.14161 6.36093 3.2964 7.09973C2.5904 7.07713 1.92639 6.89116 1.34508 6.58205V6.63357C1.34508 8.63141 2.83056 10.2988 4.80024 10.6783C4.43936 10.7713 4.05882 10.8228 3.66514 10.8228C3.38696 10.8228 3.11794 10.7964 2.85417 10.7461C3.40267 12.3859 4.99315 13.5783 6.87756 13.611C5.40388 14.7167 3.54573 15.3739 1.52749 15.3739C1.17976 15.3739 0.837236 15.3537 0.5 15.3173C2.40671 16.4896 4.67036 17.1732 7.10327 17.1732C15.028 17.1732 19.3597 10.8881 19.3597 5.43741L19.3453 4.90341C20.1917 4.32537 20.9239 3.59912 21.5 2.77233Z" />
+									</svg>
+								</a>
+							</li>
+							<li class="footer__item social-item">
+								<a
+									href="https://www.youtube.com/watch?v=yzifuLYXPSg&ab_channel=RAPFULLALBUMS"
+									target="_blank" class="footer__link social-link">
+									<svg width="24" height="18" viewBox="0 0 24 18" fill="#787A80"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M21.3903 1.11358C22.4182 1.39044 23.2288 2.20086 23.5055 3.22899C24.0197 5.10691 23.9999 9.02132 23.9999 9.02132C23.9999 9.02132 23.9999 12.9158 23.5057 14.7939C23.2288 15.8218 22.4184 16.6324 21.3903 16.9091C19.5122 17.4035 12 17.4035 12 17.4035C12 17.4035 4.50731 17.4035 2.60961 16.8895C1.58148 16.6127 0.771054 15.802 0.4942 14.7741C0 12.9158 0 9.00154 0 9.00154C0 9.00154 0 5.10691 0.4942 3.22899C0.770871 2.20104 1.60125 1.37066 2.60943 1.09399C4.48753 0.599609 11.9998 0.599609 11.9998 0.599609C11.9998 0.599609 19.5122 0.599609 21.3903 1.11358ZM15.8549 9.00158L9.60788 12.5996V5.40355L15.8549 9.00158Z" />
+									</svg>
+								</a>
+							</li>
+							<li class="footer__item social-item">
+								<a href="https://web.telegram.org/k/" target="_blank"
+									class="footer__link social-link">
+									<svg width="22" height="20" viewBox="0 0 22 20" fill="#787A80"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.63262 13.1813L8.2687 18.7653C8.78938 18.7653 9.01488 18.5213 9.2853 18.2283L11.7264 15.6833L16.7847 19.7243C17.7124 20.2883 18.366 19.9913 18.6163 18.7933L21.9365 1.8214L21.9374 1.8204C22.2317 0.324404 21.4415 -0.260593 20.5377 0.106405L1.02135 8.25736C-0.310594 8.82136 -0.290427 9.63136 0.794932 9.99835L5.78447 11.6913L17.3742 3.78039C17.9196 3.38639 18.4155 3.60439 18.0076 3.99839L8.63262 13.1813Z" />
+									</svg>
+								</a>
+							</li>
+							<li class="footer__item social-item">
+								<a href="https://en.wikipedia.org/wiki/Instagram" target="_blank"
+									class="footer__link social-link">
+									<svg width="21" height="20" viewBox="0 0 21 20" fill="#787A80"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M19.9804 5.88005C19.9336 4.81738 19.7617 4.0868 19.5156 3.45374C19.2616 2.78176 18.8709 2.18014 18.359 1.68002C17.8589 1.1721 17.2533 0.777435 16.5891 0.527447C15.9524 0.281274 15.2256 0.109427 14.163 0.0625732C13.0923 0.0117516 12.7525 0 10.0371 0C7.32172 0 6.98185 0.0117516 5.9152 0.0586052C4.85253 0.105459 4.12195 0.277459 3.48904 0.523479C2.81692 0.777435 2.2153 1.16814 1.71517 1.68002C1.20726 2.18014 0.812742 2.78573 0.562602 3.44992C0.31643 4.0868 0.144583 4.81341 0.0977294 5.87609C0.0469078 6.9467 0.0351562 7.28658 0.0351562 10.002C0.0351562 12.7173 0.0469078 13.0572 0.0937614 14.1239C0.140615 15.1865 0.312615 15.9171 0.558787 16.5502C0.812742 17.2221 1.20726 17.8238 1.71517 18.3239C2.2153 18.8318 2.82088 19.2265 3.48507 19.4765C4.12195 19.7226 4.84856 19.8945 5.91139 19.9413C6.97788 19.9883 7.31791 19.9999 10.0333 19.9999C12.7486 19.9999 13.0885 19.9883 14.1552 19.9413C15.2178 19.8945 15.9484 19.7226 16.5813 19.4765C17.9254 18.9568 18.9881 17.8941 19.5078 16.5502C19.7538 15.9133 19.9258 15.1865 19.9726 14.1239C20.0195 13.0572 20.0312 12.7173 20.0312 10.002C20.0312 7.28658 20.0273 6.9467 19.9804 5.88005ZM18.1794 14.0457C18.1364 15.0225 17.9723 15.5499 17.8355 15.9015C17.4995 16.7728 16.808 17.4643 15.9367 17.8004C15.585 17.9372 15.0538 18.1012 14.0808 18.1441C13.026 18.1911 12.7096 18.2027 10.0411 18.2027C7.37255 18.2027 7.0522 18.1911 6.00113 18.1441C5.02437 18.1012 4.49693 17.9372 4.1453 17.8004C3.71171 17.6402 3.31704 17.3862 2.9967 17.0541C2.6646 16.7298 2.41065 16.3391 2.2504 15.9055C2.11365 15.5539 1.94959 15.0225 1.9067 14.0497C1.8597 12.9948 1.8481 12.6783 1.8481 10.0097C1.8481 7.34122 1.8597 7.02087 1.9067 5.96995C1.94959 4.99319 2.11365 4.46575 2.2504 4.11412C2.41065 3.68038 2.6646 3.28586 3.00067 2.96536C3.32483 2.63327 3.71553 2.37931 4.14927 2.21921C4.5009 2.08247 5.03231 1.9184 6.00509 1.87537C7.05999 1.82851 7.37652 1.81676 10.0449 1.81676C12.7174 1.81676 13.0337 1.82851 14.0848 1.87537C15.0616 1.9184 15.589 2.08247 15.9406 2.21921C16.3742 2.37931 16.7689 2.63327 17.0892 2.96536C17.4213 3.28967 17.6753 3.68038 17.8355 4.11412C17.9723 4.46575 18.1364 4.99701 18.1794 5.96995C18.2262 7.02484 18.238 7.34122 18.238 10.0097C18.238 12.6783 18.2262 12.9908 18.1794 14.0457Z" />
+										<path
+											d="M10.0371 4.86423C7.20069 4.86423 4.89937 7.1654 4.89937 10.002C4.89937 12.8385 7.20069 15.1397 10.0371 15.1397C12.8736 15.1397 15.1748 12.8385 15.1748 10.002C15.1748 7.1654 12.8736 4.86423 10.0371 4.86423ZM10.0371 13.3347C8.19698 13.3347 6.70438 11.8422 6.70438 10.002C6.70438 8.16169 8.19698 6.66924 10.0371 6.66924C11.8774 6.66924 13.3698 8.16169 13.3698 10.002C13.3698 11.8422 11.8774 13.3347 10.0371 13.3347Z" />
+										<path
+											d="M16.5776 4.6611C16.5776 5.32346 16.0405 5.86053 15.378 5.86053C14.7156 5.86053 14.1785 5.32346 14.1785 4.6611C14.1785 3.99858 14.7156 3.46167 15.378 3.46167C16.0405 3.46167 16.5776 3.99858 16.5776 4.6611Z" />
+									</svg>
+								</a>
+							</li>
+							<li class="footer__item social-item">
+								<a href="https://ru.wikipedia.org/wiki/LinkedIn" target="_blank"
+									class="footer__link social-link">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="#787A80"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M19.995 20L20 19.9992V12.6642C20 9.07583 19.2275 6.31167 15.0325 6.31167C13.0158 6.31167 11.6625 7.41833 11.11 8.4675H11.0517V6.64667H7.07416V19.9992H11.2158V13.3875C11.2158 11.6467 11.5458 9.96334 13.7017 9.96334C15.8258 9.96334 15.8575 11.95 15.8575 13.4992V20H19.995Z" />
+										<path d="M0.329995 6.6475H4.47666V20H0.329995V6.6475Z" />
+										<path
+											d="M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0Z" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h4 class="footer__title">Site Map</h4>
+						<ul class="footer__list">
+							<li class="footer__item"><a href="#about" class="footer__link">About Us</a></li>
+							<li class="footer__item"><a href="#teach" class="footer__link">Courses</a></li>
+							<li class="footer__item"><a href="#course" class="footer__link">Events</a></li>
+							<li class="footer__item"><a href="#blog" class="footer__link">Blog</a></li>
+							<li class="footer__item"><a href="#info" class="footer__link">Contacts</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h4 class="footer__title">Courses</h4>
+						<ul class="footer__list">
+							<li class="footer__item"><a href="#teach" class="footer__link">Marketing</a></li>
+							<li class="footer__item"><a href="#teach" class="footer__link">Management</a></li>
+							<li class="footer__item"><a href="#teach" class="footer__link">HR &
+									Recruting</a></li>
+							<li class="footer__item"><a href="#teach" class="footer__link">Design</a></li>
+							<li class="footer__item"><a href="#teach" class="footer__link">Development</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h4 class="footer__title">Contact Us</h4>
+						<ul class="footer__list-info">
+							<li class="footer__phone feedback">
+								<a href="tel:4055550128" class="feedback__info--footer feedback--phone">(405)
+									555-0128</a>
+							</li>
+							<li class="footer__email feedback">
+								<a href="mailto:hello@createx.com"
+									class="feedback__info--footer feedback--mail">hello@createx.com</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column footer__column--286">
+						<h4 class="footer__title">Sign up to our newsletter</h4>
+						<form action="#post">
+							<input type="email" name="email" placeholder="Email address"
+								class="footer__input">
+						</form>
+						<span class="footer__subscribe">*Subscribe to our newsletter to receive
+							communications and early updates from Createx SEO Agency.</span>
+					</div>
 				</div>
-			</form>
+				<div class="footer__rights">
+					<div class="container">
+						<span class="footer__rights--left">© All rights reserved. Made with <span
+								class="footer__rights--right">by Createx Studio</span></span>
+					</div>
+				</div>
+			</footer>
 		</div>
-	</div>
+		<a href="#hero" class="pageup">
+			<img src="img/icons/up.svg" alt="up">
+		</a>
 
-</section>
-		</main>
-		<footer class="footer">
-	<div class="footer__container container">
-		<div class="footer__column footer__column--280">
-			<h2 class="visually-hidden">Footer site map and contacts</h2>
-			<img src="img/logo/logo_white.png" alt="Company's logo" class="footer__logo">
-			<p class="footer__descr">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </p>
-			<ul class="footer__list--social social-list">
-				<li class="footer__item social-item">
-					<a href="http://www.facebook.com.vn/" target="_blank" class="footer__link social-link">
-						<svg width="12" height="22" viewBox="0 0 12 22" fill="#787A80"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M11.5628 0.00457747L8.78558 0C5.66542 0 3.64903 2.12509 3.64903 5.41423V7.91055H0.85662C0.615322 7.91055 0.419922 8.1115 0.419922 8.35937V11.9763C0.419922 12.2241 0.615545 12.4249 0.85662 12.4249H3.64903V21.5514C3.64903 21.7993 3.84443 22 4.08573 22H7.72904C7.97033 22 8.16573 21.799 8.16573 21.5514V12.4249H11.4307C11.672 12.4249 11.8674 12.2241 11.8674 11.9763L11.8688 8.35937C11.8688 8.24036 11.8226 8.12638 11.7409 8.04215C11.6591 7.95793 11.5477 7.91055 11.4318 7.91055H8.16573V5.79439C8.16573 4.77728 8.40168 4.26094 9.6915 4.26094L11.5624 4.26025C11.8035 4.26025 11.9989 4.0593 11.9989 3.81166V0.453169C11.9989 0.205757 11.8037 0.00503522 11.5628 0.00457747Z" />
-						</svg>
-					</a>
-				</li>
-				<li class="footer__item social-item">
-					<a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B2%D0%B8%D1%82%D1%82%D0%B5%D1%80"
-						target="_blank" class="footer__link social-link">
-						<svg width="22" height="18" viewBox="0 0 22 18" fill="#787A80"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M21.5 2.77233C20.7271 3.10027 19.8978 3.32267 19.0264 3.42196C19.9161 2.91181 20.5972 2.10263 20.92 1.1414C20.0854 1.61383 19.1642 1.95688 18.1826 2.14285C17.3966 1.33994 16.2785 0.839844 15.0384 0.839844C12.6593 0.839844 10.7303 2.68691 10.7303 4.9637C10.7303 5.2866 10.7683 5.60199 10.8418 5.90357C7.26201 5.73141 4.08768 4.08917 1.96314 1.59372C1.59176 2.20189 1.38049 2.91053 1.38049 3.66697C1.38049 5.09814 2.14161 6.36093 3.2964 7.09973C2.5904 7.07713 1.92639 6.89116 1.34508 6.58205V6.63357C1.34508 8.63141 2.83056 10.2988 4.80024 10.6783C4.43936 10.7713 4.05882 10.8228 3.66514 10.8228C3.38696 10.8228 3.11794 10.7964 2.85417 10.7461C3.40267 12.3859 4.99315 13.5783 6.87756 13.611C5.40388 14.7167 3.54573 15.3739 1.52749 15.3739C1.17976 15.3739 0.837236 15.3537 0.5 15.3173C2.40671 16.4896 4.67036 17.1732 7.10327 17.1732C15.028 17.1732 19.3597 10.8881 19.3597 5.43741L19.3453 4.90341C20.1917 4.32537 20.9239 3.59912 21.5 2.77233Z" />
-						</svg>
-					</a>
-				</li>
-				<li class="footer__item social-item">
-					<a href="https://www.youtube.com/watch?v=yzifuLYXPSg&ab_channel=RAPFULLALBUMS"
-						target="_blank" class="footer__link social-link">
-						<svg width="24" height="18" viewBox="0 0 24 18" fill="#787A80"
-							xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-								d="M21.3903 1.11358C22.4182 1.39044 23.2288 2.20086 23.5055 3.22899C24.0197 5.10691 23.9999 9.02132 23.9999 9.02132C23.9999 9.02132 23.9999 12.9158 23.5057 14.7939C23.2288 15.8218 22.4184 16.6324 21.3903 16.9091C19.5122 17.4035 12 17.4035 12 17.4035C12 17.4035 4.50731 17.4035 2.60961 16.8895C1.58148 16.6127 0.771054 15.802 0.4942 14.7741C0 12.9158 0 9.00154 0 9.00154C0 9.00154 0 5.10691 0.4942 3.22899C0.770871 2.20104 1.60125 1.37066 2.60943 1.09399C4.48753 0.599609 11.9998 0.599609 11.9998 0.599609C11.9998 0.599609 19.5122 0.599609 21.3903 1.11358ZM15.8549 9.00158L9.60788 12.5996V5.40355L15.8549 9.00158Z" />
-						</svg>
-					</a>
-				</li>
-				<li class="footer__item social-item">
-					<a href="https://web.telegram.org/k/" target="_blank" class="footer__link social-link">
-						<svg width="22" height="20" viewBox="0 0 22 20" fill="#787A80"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M8.63262 13.1813L8.2687 18.7653C8.78938 18.7653 9.01488 18.5213 9.2853 18.2283L11.7264 15.6833L16.7847 19.7243C17.7124 20.2883 18.366 19.9913 18.6163 18.7933L21.9365 1.8214L21.9374 1.8204C22.2317 0.324404 21.4415 -0.260593 20.5377 0.106405L1.02135 8.25736C-0.310594 8.82136 -0.290427 9.63136 0.794932 9.99835L5.78447 11.6913L17.3742 3.78039C17.9196 3.38639 18.4155 3.60439 18.0076 3.99839L8.63262 13.1813Z" />
-						</svg>
-					</a>
-				</li>
-				<li class="footer__item social-item">
-					<a href="https://en.wikipedia.org/wiki/Instagram" target="_blank"
-						class="footer__link social-link">
-						<svg width="21" height="20" viewBox="0 0 21 20" fill="#787A80"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M19.9804 5.88005C19.9336 4.81738 19.7617 4.0868 19.5156 3.45374C19.2616 2.78176 18.8709 2.18014 18.359 1.68002C17.8589 1.1721 17.2533 0.777435 16.5891 0.527447C15.9524 0.281274 15.2256 0.109427 14.163 0.0625732C13.0923 0.0117516 12.7525 0 10.0371 0C7.32172 0 6.98185 0.0117516 5.9152 0.0586052C4.85253 0.105459 4.12195 0.277459 3.48904 0.523479C2.81692 0.777435 2.2153 1.16814 1.71517 1.68002C1.20726 2.18014 0.812742 2.78573 0.562602 3.44992C0.31643 4.0868 0.144583 4.81341 0.0977294 5.87609C0.0469078 6.9467 0.0351562 7.28658 0.0351562 10.002C0.0351562 12.7173 0.0469078 13.0572 0.0937614 14.1239C0.140615 15.1865 0.312615 15.9171 0.558787 16.5502C0.812742 17.2221 1.20726 17.8238 1.71517 18.3239C2.2153 18.8318 2.82088 19.2265 3.48507 19.4765C4.12195 19.7226 4.84856 19.8945 5.91139 19.9413C6.97788 19.9883 7.31791 19.9999 10.0333 19.9999C12.7486 19.9999 13.0885 19.9883 14.1552 19.9413C15.2178 19.8945 15.9484 19.7226 16.5813 19.4765C17.9254 18.9568 18.9881 17.8941 19.5078 16.5502C19.7538 15.9133 19.9258 15.1865 19.9726 14.1239C20.0195 13.0572 20.0312 12.7173 20.0312 10.002C20.0312 7.28658 20.0273 6.9467 19.9804 5.88005ZM18.1794 14.0457C18.1364 15.0225 17.9723 15.5499 17.8355 15.9015C17.4995 16.7728 16.808 17.4643 15.9367 17.8004C15.585 17.9372 15.0538 18.1012 14.0808 18.1441C13.026 18.1911 12.7096 18.2027 10.0411 18.2027C7.37255 18.2027 7.0522 18.1911 6.00113 18.1441C5.02437 18.1012 4.49693 17.9372 4.1453 17.8004C3.71171 17.6402 3.31704 17.3862 2.9967 17.0541C2.6646 16.7298 2.41065 16.3391 2.2504 15.9055C2.11365 15.5539 1.94959 15.0225 1.9067 14.0497C1.8597 12.9948 1.8481 12.6783 1.8481 10.0097C1.8481 7.34122 1.8597 7.02087 1.9067 5.96995C1.94959 4.99319 2.11365 4.46575 2.2504 4.11412C2.41065 3.68038 2.6646 3.28586 3.00067 2.96536C3.32483 2.63327 3.71553 2.37931 4.14927 2.21921C4.5009 2.08247 5.03231 1.9184 6.00509 1.87537C7.05999 1.82851 7.37652 1.81676 10.0449 1.81676C12.7174 1.81676 13.0337 1.82851 14.0848 1.87537C15.0616 1.9184 15.589 2.08247 15.9406 2.21921C16.3742 2.37931 16.7689 2.63327 17.0892 2.96536C17.4213 3.28967 17.6753 3.68038 17.8355 4.11412C17.9723 4.46575 18.1364 4.99701 18.1794 5.96995C18.2262 7.02484 18.238 7.34122 18.238 10.0097C18.238 12.6783 18.2262 12.9908 18.1794 14.0457Z" />
-							<path
-								d="M10.0371 4.86423C7.20069 4.86423 4.89937 7.1654 4.89937 10.002C4.89937 12.8385 7.20069 15.1397 10.0371 15.1397C12.8736 15.1397 15.1748 12.8385 15.1748 10.002C15.1748 7.1654 12.8736 4.86423 10.0371 4.86423ZM10.0371 13.3347C8.19698 13.3347 6.70438 11.8422 6.70438 10.002C6.70438 8.16169 8.19698 6.66924 10.0371 6.66924C11.8774 6.66924 13.3698 8.16169 13.3698 10.002C13.3698 11.8422 11.8774 13.3347 10.0371 13.3347Z" />
-							<path
-								d="M16.5776 4.6611C16.5776 5.32346 16.0405 5.86053 15.378 5.86053C14.7156 5.86053 14.1785 5.32346 14.1785 4.6611C14.1785 3.99858 14.7156 3.46167 15.378 3.46167C16.0405 3.46167 16.5776 3.99858 16.5776 4.6611Z" />
-						</svg>
-					</a>
-				</li>
-				<li class="footer__item social-item">
-					<a href="https://ru.wikipedia.org/wiki/LinkedIn" target="_blank"
-						class="footer__link social-link">
-						<svg width="20" height="20" viewBox="0 0 20 20" fill="#787A80"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M19.995 20L20 19.9992V12.6642C20 9.07583 19.2275 6.31167 15.0325 6.31167C13.0158 6.31167 11.6625 7.41833 11.11 8.4675H11.0517V6.64667H7.07416V19.9992H11.2158V13.3875C11.2158 11.6467 11.5458 9.96334 13.7017 9.96334C15.8258 9.96334 15.8575 11.95 15.8575 13.4992V20H19.995Z" />
-							<path d="M0.329995 6.6475H4.47666V20H0.329995V6.6475Z" />
-							<path
-								d="M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0Z" />
-						</svg>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="footer__column">
-			<h4 class="footer__title">Site Map</h4>
-			<ul class="footer__list">
-				<li class="footer__item"><a href="#about" class="footer__link">About Us</a></li>
-				<li class="footer__item"><a href="#teach" class="footer__link">Courses</a></li>
-				<li class="footer__item"><a href="#course" class="footer__link">Events</a></li>
-				<li class="footer__item"><a href="#blog" class="footer__link">Blog</a></li>
-				<li class="footer__item"><a href="#info" class="footer__link">Contacts</a></li>
-			</ul>
-		</div>
-		<div class="footer__column">
-			<h4 class="footer__title">Courses</h4>
-			<ul class="footer__list">
-				<li class="footer__item"><a href="#teach" class="footer__link">Marketing</a></li>
-				<li class="footer__item"><a href="#teach" class="footer__link">Management</a></li>
-				<li class="footer__item"><a href="#teach" class="footer__link">HR & Recruting</a></li>
-				<li class="footer__item"><a href="#teach" class="footer__link">Design</a></li>
-				<li class="footer__item"><a href="#teach" class="footer__link">Development</a></li>
-			</ul>
-		</div>
-		<div class="footer__column">
-			<h4 class="footer__title">Contact Us</h4>
-			<ul class="footer__list-info">
-				<li class="footer__phone feedback">
-					<a href="tel:4055550128" class="feedback__info--footer feedback--phone">(405) 555-0128</a>
-				</li>
-				<li class="footer__email feedback">
-					<a href="mailto:hello@createx.com" class="feedback__info--footer feedback--mail">hello@createx.com</a>
-				</li>
-			</ul>
-		</div>
-		<div class="footer__column footer__column--286">
-			<h4 class="footer__title">Sign up to our newsletter</h4>
-			<form action="#post">
-				<input type="email" name="email" placeholder="Email address" class="footer__input">
-			</form>
-			<span class="footer__subscribe">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</span>
-		</div>
-	</div>
-	<div class="footer__rights">
-		<div class="container">
-			<span class="footer__rights--left">© All rights reserved. Made with <span class="footer__rights--right">by Createx Studio</span></span>
-		</div>
-	</div>
-</footer>
-	</div>
-	<a href="#hero" class="pageup">
-		<img src="img/icons/up.svg" alt="up">
-	</a>
-
-	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-	<script src="js/inputmask.min.js"></script>
-	<script src="js/swiper.js"></script>
-	<script src="js/script.js"></script>
-</body>
+		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/swiper.js"></script>
+		<script src="js/script.js"></script>
+	</body>
 </html>
