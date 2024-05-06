@@ -1,7 +1,5 @@
 # CREATEX-Online-School
 
-Первый сольный проект | First solo project
-
 Инструменты при разработке (Development tools): HTML, CSS (SCSS), vanila JS, gulp
 
 Библиотеки JS (JS library): swiper, inputmask, inert
